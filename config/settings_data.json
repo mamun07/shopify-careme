@@ -833,17 +833,18 @@
             "settings": {
               "layout_block": "full",
               "header_custom_width_size": 1200,
-              "mega_tyle": "style1",
+              "mega_tyle": "style3",
               "item": "Men",
               "column": 3,
               "menu_text_left": "new-menu",
-              "menu_text_left_sale": "",
+              "menu_text_left_sale": "Men",
               "show_banner_1": false,
-              "banner_url_1": "",
+              "banner_1": "shopify:\/\/shop_images\/Encendedor-Retro-de-Metal-para-cigarros-accesorios-de-pedernal-encendedor-de-Gas-butano-rueda-deslizante-lateral.jpg_Q90.jpg__2.jpg",
+              "banner_url_1": "shopify:\/\/products\/100pcs-box-full-cover-fake-nail",
               "product_limit": 4,
               "show_product": false,
               "product_title": "Featured Products",
-              "product_collection": ""
+              "product_collection": "100-cod-items"
             }
           }
         },
