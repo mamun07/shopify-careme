@@ -1,10 +1,10 @@
 {
   "current": {
-    "layout_header": "custom_width",
+    "layout_header": "full",
     "header_custom_width_size": 1800,
-    "layout_body": "default",
+    "layout_body": "full",
     "body_custom_width_size": 1800,
-    "layout_footer": "default",
+    "layout_footer": "full",
     "footer_custom_width_size": 1800,
     "header_mobile_layout": "01",
     "header_layout": "02",
