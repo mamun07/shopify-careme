@@ -263,13 +263,15 @@
     "gdpr_cookie_consent_color": "#ffffff",
     "gdpr_cookie_consent_color_privacy": "#818181",
     "gdpr_cookie_consent_bg": "#141414",
-    "show_newsletter_popup": true,
+    "show_newsletter_popup": false,
     "newsletter_popup_delay": 5,
     "newsletter_popup_image": "shopify:\/\/shop_images\/14457623-1-red.jpg",
     "newsletter_popup_title": "Join Our Mailing List",
     "newsletter_popup_desc": "Sign Up for exclusive updates, \nnew arrivals & insider only discounts",
     "newsletter_popup_note": "No, thanks",
+    "show_recently_viewed_popup": false,
     "recently_viewed_limit": 5,
+    "show_recently_viewed_share": false,
     "show_before_you_leave": false,
     "before_you_leave_time": 1,
     "before_you_leave_logo": "shopify:\/\/shop_images\/ella-logo-black-compressor.png",
@@ -438,12 +440,18 @@
           "announcement-bar-0"
         ],
         "settings": {
+          "enable_announcement": true,
+          "layout": "slider",
           "arrow_active": false,
           "enable_close": false,
           "color_text": "#ffffff",
           "bg_color_text": "#1a2531",
           "bg_color_text_gradient": "",
-          "font_size_text": 14
+          "font_size_text": 14,
+          "font_style_text": "normal",
+          "font_weight_text": "500",
+          "padding_top": 0,
+          "padding_bottom": 0
         }
       },
       "header": {
@@ -583,7 +591,8 @@
             "settings": {
               "custom_width": "25",
               "heading": "Shop",
-              "menu": "categories-footer-home3"
+              "menu": "",
+              "mg_bottom": 0
             }
           },
           "d214f3b2-0aee-43b9-9dfa-73991e36badc": {
@@ -591,7 +600,8 @@
             "settings": {
               "custom_width": "25",
               "heading": "information",
-              "menu": "information"
+              "menu": "",
+              "mg_bottom": 0
             }
           },
           "87eae35d-3b4e-471c-abc6-db4ed7d19b47": {
@@ -599,7 +609,8 @@
             "settings": {
               "custom_width": "25",
               "heading": "Customer Service",
-              "menu": "customer-service"
+              "menu": "customer-service",
+              "mg_bottom": 0
             }
           },
           "ac4c4412-316f-431c-9315-6faa26e56a0c": {
@@ -610,7 +621,8 @@
               "border_block_style_2_color": "#000000",
               "heading": "keep in touch",
               "logo_margin_bottom": 28,
-              "subtext": ""
+              "subtext": "",
+              "mg_bottom": 0
             }
           },
           "ece4468c-0331-4616-bca7-5e13eadbf9bb": {
@@ -678,6 +690,7 @@
           "footer_top_color_link_hover": "#ffffff",
           "social_heading": "",
           "show_social": true,
+          "enable_bg_social": false,
           "social_margin_top": 16,
           "social_icon_width": 17,
           "social_icon_padding": 12,
@@ -695,7 +708,6 @@
           "social_background_color_gradient_hover": "",
           "social_box_hover_color": "#ffffff",
           "enable_trust": false,
-          "image_trust": "shopify:\/\/shop_images\/Layer-535.png",
           "margin_top_image_trust": 60,
           "trust_position": "4",
           "image_trust_align": "center",
@@ -811,7 +823,6 @@
               "item": "new in",
               "column": 3,
               "show_banner_1": true,
-              "banner_1": "shopify:\/\/shop_images\/home-6-mega-menu-1.jpg",
               "banner_url_1": "shopify:\/\/collections\/blazero",
               "show_product": true,
               "product_title": "Featured Products",
@@ -826,13 +837,10 @@
               "item": "trend",
               "column": 3,
               "show_banner_1": true,
-              "banner_1": "shopify:\/\/shop_images\/home-6-mega-menu-2.jpg",
               "banner_url_1": "shopify:\/\/collections\/congue",
               "show_banner_2": true,
-              "banner_2": "shopify:\/\/shop_images\/home-6-mega-menu-3.jpg",
               "banner_url_2": "shopify:\/\/collections\/scarvero",
               "show_banner_3": true,
-              "banner_3": "shopify:\/\/shop_images\/home-6-mega-menu-4.jpg",
               "banner_url_3": "shopify:\/\/collections\/nor-loremirus"
             }
           },
@@ -845,19 +853,14 @@
               "item": "collections",
               "column": 5,
               "show_banner_1": true,
-              "banner_1": "shopify:\/\/shop_images\/home-6-mega-menu-5.jpg",
               "banner_url_1": "shopify:\/\/collections\/cosmopolis",
               "show_banner_2": true,
-              "banner_2": "shopify:\/\/shop_images\/home-6-mega-menu-6.jpg",
               "banner_url_2": "shopify:\/\/collections\/congue",
               "show_banner_3": true,
-              "banner_3": "shopify:\/\/shop_images\/home-6-mega-menu-7.jpg",
               "banner_url_3": "shopify:\/\/collections\/metropolis",
               "show_banner_4": true,
-              "banner_4": "shopify:\/\/shop_images\/home-6-mega-menu-8.jpg",
               "banner_url_4": "shopify:\/\/collections\/suito",
               "show_banner_5": true,
-              "banner_5": "shopify:\/\/shop_images\/home-6-mega-menu-9.jpg",
               "banner_url_5": "shopify:\/\/collections\/nor-loremirus"
             }
           },
@@ -885,8 +888,12 @@
         "settings": {
           "style_header": "style_1",
           "menu": "main-menu",
+          "menu_top_spacing": 27,
+          "menu_bottom_spacing": 27,
+          "grid_gap_menu": 20,
           "show_megamenu": true,
           "enable_sticky_header": true,
+          "hide_scroll": true,
           "show_search": true,
           "show_cart": true,
           "show_wishlist": true,
@@ -904,17 +911,16 @@
           "cart_color_item_mb": "#ffffff",
           "header_mobile_bg": "#ffffff",
           "header_mobile_color": "#232323",
-          "logo": "shopify:\/\/shop_images\/Home-6-Logo-Parallax.png",
-          "logo_mobile": "shopify:\/\/shop_images\/ella-logo-black-home-5.png",
+          "header_icon_mobile_spacing": 30,
           "logo_text": "",
           "logo_width": 70,
           "logo_width_mobile": 50,
+          "logo_position": "left",
           "logo_font_size": 16,
           "logo_font_weight": "900",
           "logo_text_transform": "uppercase",
           "logo_color": "#232323",
           "enable_parallax": true,
-          "logo_parallax": "shopify:\/\/shop_images\/home-6-logo.png",
           "color_sticky_parallax": "#ffffff",
           "bg_sticky_parallax": "rgba(0,0,0,0)",
           "lv_1_color": "#232323",
