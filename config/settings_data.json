@@ -733,7 +733,7 @@
           "footer_bottom_bg_gradient": "",
           "show_copyright": true,
           "enable_layout_grid": true,
-          "copyright_content": "<div style=\"line-height: 26px\">Â© 2020 Ella Demo. Powered by Shopify.<br>\nShopify Themes & Templates by <a style=\"text-decoration: underline;text-underline-offset:0.3rem;\" href=\"https:\/\/halothemes.com\/\">HaloThemes<\/a>\n<\/div>",
+          "copyright_content": "© 2023 Care Me Bangladesh. All Rights Reserved.",
           "show_payment": true,
           "payment_margin_top": 30,
           "heading_payment": "payment accept",
