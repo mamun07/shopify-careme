@@ -547,7 +547,7 @@
         "bg_color_gradient_button_hover": "",
         "product_block_collection": "100-cod-items",
         "product_block_limit": 8,
-        "grid_gap": 30,
+        "grid_gap": 15,
         "pb_style": "style1",
         "style_countdown": "style_1",
         "countdown": "",
@@ -833,10 +833,18 @@
             "title": "All Products",
             "collection": "100-cod-items"
           }
+        },
+        "51eca5ad-ee20-4f14-b3b9-7f150154a068": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "Men Fashion",
+            "collection": "mens-fashion"
+          }
         }
       },
       "block_order": [
-        "b6dbf97e-97e7-47f3-831d-ddf80ba0692c"
+        "b6dbf97e-97e7-47f3-831d-ddf80ba0692c",
+        "51eca5ad-ee20-4f14-b3b9-7f150154a068"
       ],
       "settings": {
         "container": "container",
