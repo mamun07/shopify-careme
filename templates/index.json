@@ -415,7 +415,7 @@
       ],
       "settings": {
         "container": "1200",
-        "padding_full_width": 0,
+        "padding_full_width": 100,
         "disable_padding_content": false,
         "mg_minus_desktop": 0,
         "block_layout": "grid",
