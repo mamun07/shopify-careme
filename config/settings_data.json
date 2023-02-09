@@ -827,6 +827,26 @@
       },
       "header-02": {
         "type": "header-02",
+        "blocks": {
+          "a7141b58-5326-4ba5-9f32-b0c7c03b38a3": {
+            "type": "megamenu_style_1",
+            "settings": {
+              "layout_block": "full",
+              "header_custom_width_size": 1200,
+              "item": "Men",
+              "column": 3,
+              "show_banner_1": true,
+              "banner_1": "shopify:\/\/shop_images\/Encendedor-Retro-de-Metal-para-cigarros-accesorios-de-pedernal-encendedor-de-Gas-butano-rueda-deslizante-lateral.jpg_Q90.jpg__2.jpg",
+              "banner_url_1": "",
+              "show_product": false,
+              "product_title": "Featured Products",
+              "product_collection": "1-05l-stainless-steel-electric-lunch-box"
+            }
+          }
+        },
+        "block_order": [
+          "a7141b58-5326-4ba5-9f32-b0c7c03b38a3"
+        ],
         "settings": {
           "style_header": "style_2",
           "menu": "banner-category",
