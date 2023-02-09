@@ -830,8 +830,8 @@
         "b6dbf97e-97e7-47f3-831d-ddf80ba0692c": {
           "type": "ProductTabs",
           "settings": {
-            "title": "All Products",
-            "collection": "100-cod-items"
+            "title": "New Arrivals",
+            "collection": "new-arrivals"
           }
         },
         "51eca5ad-ee20-4f14-b3b9-7f150154a068": {
@@ -855,13 +855,13 @@
         "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50,
-        "product_block_layout": "slider",
+        "product_block_layout": "scroll",
         "product_block_title": "Trending Now",
         "fontsize_title": 16,
         "fontsize_title_mb": 16,
         "mg_bottom_title": 12,
         "enable_border_title": true,
-        "border_color_title": "#232323",
+        "border_color_title": "#d7d7d7",
         "enable_border_title2": false,
         "border_color_title2": "#232323",
         "color_title": "#232323",
