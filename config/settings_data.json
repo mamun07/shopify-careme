@@ -890,7 +890,7 @@
         ],
         "settings": {
           "style_header": "style_1",
-          "menu": "main-menu",
+          "menu": "banner-category",
           "menu_top_spacing": 27,
           "menu_bottom_spacing": 27,
           "grid_gap_menu": 20,
