@@ -258,6 +258,7 @@
           "type": "image",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/H689cbc578332470d877538fc2c739f78C.jpg_960x960_ef54ae13-b02a-49ed-b3a9-a5a75a497131.webp",
             "title_align": "center",
             "enable_absolute": true,
             "align_items": "center",
@@ -308,6 +309,7 @@
           "type": "image",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Encendedor-Retro-de-Metal-para-cigarros-accesorios-de-pedernal-encendedor-de-Gas-butano-rueda-deslizante-lateral.jpg_Q90.jpg__1.jpg",
             "title_align": "center",
             "enable_absolute": true,
             "align_items": "center",
@@ -358,6 +360,7 @@
           "type": "image",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Encendedor-Retro-de-Metal-para-cigarros-accesorios-de-pedernal-encendedor-de-Gas-butano-rueda-deslizante-lateral.jpg_Q90.jpg__2.jpg",
             "title_align": "center",
             "enable_absolute": true,
             "align_items": "center",

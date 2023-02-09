@@ -151,6 +151,7 @@
     "swatch": "Color",
     "swatch_type": "color",
     "swatch_border_radius": 0,
+    "customization_option_collection": "",
     "show_customer_login": true,
     "customer_login_btn_2": "2",
     "after_add_to_cart": "quick_cart",
