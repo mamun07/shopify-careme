@@ -3996,7 +3996,7 @@
         "type": "text",
         "id": "image_loading_text",
         "label": "t:settings_schema.product_card.settings.product_media.label__5",
-        "default": "Ella"
+        "default": "CareMe"
       },
       {
         "type": "checkbox",
