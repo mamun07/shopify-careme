@@ -167,7 +167,7 @@
     "trust_image_product_4": "shopify:\/\/shop_images\/security-image-4.png",
     "trust_image_cart_1": "shopify:\/\/shop_images\/image-trust.jpg",
     "share_product_type": "addthis",
-    "product_card_layout": "03",
+    "product_card_layout": "04",
     "disable_product_card_border": true,
     "product_block_image_ratio": "adapt",
     "portrait_height": "90",
