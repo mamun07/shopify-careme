@@ -287,14 +287,21 @@
                     <div class="social_info">
                       <ul>
                         <li>{% render 'icon-facebook' %}</li>
-                        <li>{% render 'icon-facebook' %}</li>
+                        <li>{% render 'icon-instagram' %}</li>
                         <li>{% render 'icon-facebook' %}</li>
                         <li>{% render 'icon-facebook' %}</li>
                       </ul>
                     </div>
                     {{ block.settings.text }}
-                    <div class="contact_info">
-                      <p>09678-008899</p>
+                    <div class="social_info">
+                      <ul>
+                        <li>
+                          <a href="tel:09678-008899">{% render 'icon-mail' %} 09678-008899</a>
+                        </li>
+                        <li>
+                          <a href="mailto:info@caremebd.com">{% render 'icon-mail' %} info@caremebd.com</a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 {%- endif -%}
