@@ -242,7 +242,15 @@
                         {%- case block.type -%}
                             {%- when 'announcement' -%}
                                 {%- if block.settings.text != blank -%}
-                                    ok
+                                    <div class="announcement-bar__message text-center" id="{{block.id}}"  
+                                            style="--button-color-style: {{ block.settings.btn_color }};
+                                                    --button-border-style: {{ block.settings.btn_border_color }};
+                                                    --button-background-style: {% if block.settings.btn_bg_color_gradient != blank %}{{ block.settings.btn_bg_color_gradient }}{% else %}{{ block.settings.btn_bg_color }}{% endif %}">
+                                            
+                                                    <div>Social</div>
+                                                    <div>{{ block.settings.text }}</div>
+                                                    <div>Contact</div>
+                                    </div>
                                 {%- endif -%}
                             {%- when 'countdown' -%}
                                 <div class="announcement-bar__message text-center" id="{{block.id}}"
