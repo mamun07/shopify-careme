@@ -1,6 +1,17 @@
 <div class="spotlight_with_text_bg">
   <div class="container">
-    <div class="row">ok</div>
+    <div class="row">
+      {% for block in section.blocks %}
+        <div class="spotlight_main">
+          <div class="entry_thumb">
+            {{ block.settings.image | image_url: width: '400X600' | image_tag }}
+            <button>{{ block.settings.button }}</button>
+          </div>
+          <h2>{{ block.settings.title }}</h2>
+          <h2>{{ block.settings.description }}</h2>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
