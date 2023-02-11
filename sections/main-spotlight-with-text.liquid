@@ -5,7 +5,12 @@
         <div class="spotlight_main">
           <div class="entry_thumb">
             {% if block.settings.image %}
-              {{ block.settings.image | image_url: width: 'large' | image_tag }}
+              {{
+                block.settings.image
+                | image_url: width: 500
+                | image_tag:
+                  sizes: '(min-width:1600px) 960px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)'
+              }}
             {% else %}
               {{ 'image' | placeholder_svg_tag }}
             {% endif %}
