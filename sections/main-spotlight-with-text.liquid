@@ -64,6 +64,24 @@
   .spotlight_main p {
     color: #fff;
   }
+  @media (max-width: 1023px) {
+    .spotlight_with_text_bg {
+      padding: 50px 100px !important;
+    }
+    .spotlight_with_text_bg .row {
+      gap: 15px;
+      margin-top: -100px;
+    }
+  }
+  @media (max-width: 767px) {
+    .spotlight_with_text_bg {
+      padding: 50px 0px !important;
+    }
+    .spotlight_with_text_bg .row {
+      gap: 10px;
+      margin-top: -100px;
+    }
+  }
 </style>
 
 {% schema %}
