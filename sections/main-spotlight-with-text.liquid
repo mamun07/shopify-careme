@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       {% for block in section.blocks %}
-        <div class="col-3 spotlight_main">
+        <div class="spotlight_main">
           <div class="entry_thumb">
             {% if block.settings.image %}
               {{ block.settings.image | image_url: width: '400X600' | image_tag }}
@@ -25,11 +25,10 @@
     background: #000;
   }
   .spotlight_with_text_bg .row {
-    display: flex;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 10px;
     margin-top: -200px;
-  }
-  .spotlight_with_text_bg .row .col-3 {
-    width: 33.33%;
   }
   .spotlight_main .entry_thumb {
     position: relative;
