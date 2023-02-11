@@ -137,7 +137,9 @@
     .announcement-bar .slick-slider .announcement-bar__message{
         display: inline-block;
     }
-
+    .announcement-bar__message.mamun_custome{
+        display: flex;
+    }
     @media (max-width: 1400px){
         {% if arrow == true %}
             .announcement-bar .layout--slider .row{
@@ -265,7 +267,7 @@
               {%- when 'announcement' -%}
                 {%- if block.settings.text != blank -%}
                   <div
-                    class="announcement-bar__message text-center"
+                    class="announcement-bar__message mamun_custome text-center"
                     id="{{block.id}}"
                     style="
                       --button-color-style: {{ block.settings.btn_color }};
