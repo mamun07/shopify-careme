@@ -21,7 +21,7 @@
 
 <style>
   .spotlight_with_text_bg {
-    padding: 50px 100px !important;
+    padding: {{ section.settings.section_padd }} 150px !important;
   }
   .spotlight_with_text_bg .row {
     display: flex;
@@ -63,7 +63,7 @@
     },
     {
       "type": "range",
-      "id": "paddign",
+      "id": "section_padd",
       "min": 15,
       "max": 100,
       "step": 1,
