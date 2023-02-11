@@ -1,8 +1,8 @@
 <div class="spotlight_with_text_bg">
   <div class="container">
-    <div class="row column-3">
+    <div class="row">
       {% for block in section.blocks %}
-        <div class="halo-item spotlight_main">
+        <div class="column-3 spotlight_main">
           <div class="entry_thumb">
             {% if block.settings.image %}
               {{ block.settings.image | image_url: width: '400X600' | image_tag }}
@@ -18,6 +18,12 @@
     </div>
   </div>
 </div>
+
+<style>
+  .column-3 {
+    width: calc(100% / 3);
+  }
+</style>
 
 {% schema %}
 {
