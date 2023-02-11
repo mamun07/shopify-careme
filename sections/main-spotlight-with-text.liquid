@@ -12,7 +12,7 @@
             <a>{{ block.settings.button }}</a>
           </div>
           <h2>{{ block.settings.title }}</h2>
-          <h2>{{ block.settings.description }}</h2>
+          <p>{{ block.settings.description }}</p>
         </div>
       {% endfor %}
     </div>
@@ -35,6 +35,12 @@
   }
   .spotlight_main .entry_thumb a {
     position: absulate;
+  }
+  .spotlight_main h2 {
+    color: #fff;
+  }
+  .spotlight_main p {
+    color: #fff;
   }
 </style>
 
