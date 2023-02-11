@@ -2,17 +2,19 @@
   <div class="container">
     <div class="row">
       {% for block in section.blocks %}
-        <div class="column-3 spotlight_main">
-          <div class="entry_thumb">
-            {% if block.settings.image %}
-              {{ block.settings.image | image_url: width: '400X600' | image_tag }}
-            {% else %}
-              {{ 'image' | placeholder_svg_tag }}
-            {% endif %}
-            <button>{{ block.settings.button }}</button>
+        <div class="column-3">
+          <div class="spotlight_main">
+            <div class="entry_thumb">
+              {% if block.settings.image %}
+                {{ block.settings.image | image_url: width: '400X600' | image_tag }}
+              {% else %}
+                {{ 'image' | placeholder_svg_tag }}
+              {% endif %}
+              <button>{{ block.settings.button }}</button>
+            </div>
+            <h2>{{ block.settings.title }}</h2>
+            <h2>{{ block.settings.description }}</h2>
           </div>
-          <h2>{{ block.settings.title }}</h2>
-          <h2>{{ block.settings.description }}</h2>
         </div>
       {% endfor %}
     </div>
