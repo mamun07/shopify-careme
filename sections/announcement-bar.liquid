@@ -152,7 +152,7 @@
     .social_info ul li{
         list-style: none;
         float: left;
-        margin-right: 10px;
+        margin-right: 5px;
         line-height: 0;
         cursor: pointer;
     }
@@ -305,20 +305,34 @@
                   >
                     <div class="left social_info">
                       <ul>
-                        <li>{% render 'icon-facebook' %}</li>
-                        <li>{% render 'icon-instagram' %}</li>
-                        <li>{% render 'icon-facebook' %}</li>
-                        <li>{% render 'icon-facebook' %}</li>
+                        <li>
+                          <a target="_blank" href="https://www.facebook.com/caremeglobal">
+                            {%- render 'icon-facebook' %}
+                          </a>
+                        </li>
+                        <li>
+                          <a target="_blank" href="https://www.linkedin.com/company/care-me">
+                            {%- render 'icon-instagram' %}
+                          </a>
+                        </li>
+                        <li>
+                          <a target="_blank" href="https://www.youtube.com/channel/UCovrQhEFBdyD9m2E3sTuF_Q">
+                            {%- render 'icon-youtube' %}
+                          </a>
+                        </li>
+                        <li>
+                          <a target="_blank" href="">{% render 'icon-tiktok' %} </a>
+                        </li>
                       </ul>
                     </div>
                     {{ block.settings.text }}
                     <div class="right social_info">
                       <ul>
                         <li>
-                          <a href="tel:09678-008899">{% render 'icon-mail' %} 09678-008899</a>
+                          <a href="tel:09678-008899">{% render 'icon-phone' %} 09678-008899</a>
                         </li>
                         <li>
-                          <a href="mailto:info@caremebd.com">{% render 'icon-mail' %} info@caremebd.com</a>
+                          <a href="mailto:info@caremebd.com">{% render 'icon-mail-2' %} info@caremebd.com</a>
                         </li>
                       </ul>
                     </div>
