@@ -397,12 +397,14 @@
         "bg_color_gradient_tab_active": ""
       }
     },
-    "c59ac2f0-5096-4419-b470-7aa385a64569": {
+    "7948e779-25ea-49f1-90ab-10ec424da6c9": {
       "type": "main-image-banner",
       "settings": {
         "spotlight_bg": "#2d2d2d",
         "margin_top": 50,
-        "paddign": 50
+        "paddign": 50,
+        "1st_img_url": "",
+        "2nd_img_url": ""
       }
     }
   },
@@ -411,6 +413,6 @@
     "12195d59-7eb8-4c7b-862d-02a270b7c3cf",
     "163247026462da6862",
     "bc83b72d-e874-4ec2-be4f-7d08bdd3d162",
-    "c59ac2f0-5096-4419-b470-7aa385a64569"
+    "7948e779-25ea-49f1-90ab-10ec424da6c9"
   ]
 }
