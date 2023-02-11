@@ -1,0 +1,58 @@
+<div class="image_banner">
+  <h2>Image Banner</h2>
+</div>
+
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Image With Text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "spotlight_bg",
+      "label": "Background",
+      "default": "#2d2d2d"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "paddign",
+      "min": 15,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image With Text",
+      "blocks": [
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
