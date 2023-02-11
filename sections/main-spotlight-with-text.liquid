@@ -5,9 +5,9 @@
         <div class="col-3 spotlight_main">
           <div class="entry_thumb">
             {% if block.settings.image %}
-              {{ block.settings.image | image_url: width: '400X600' | image_tag }}
+              {{ block.settings.image | image_url | image_tag }}
             {% else %}
-              {{ 'image' | image_url: width: '400X600' | placeholder_svg_tag }}
+              {{ 'image' | placeholder_svg_tag }}
             {% endif %}
             <a>{{ block.settings.button }}</a>
           </div>
