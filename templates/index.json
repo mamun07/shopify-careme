@@ -396,23 +396,12 @@
         "bg_color_tab_active": "#f8f8f8",
         "bg_color_gradient_tab_active": ""
       }
-    },
-    "7948e779-25ea-49f1-90ab-10ec424da6c9": {
-      "type": "main-image-banner",
-      "settings": {
-        "spotlight_bg": "#2d2d2d",
-        "margin_top": 50,
-        "paddign": 50,
-        "1st_img_url": "",
-        "2nd_img_url": ""
-      }
     }
   },
   "order": [
     "16321237356a896dad",
     "12195d59-7eb8-4c7b-862d-02a270b7c3cf",
     "163247026462da6862",
-    "bc83b72d-e874-4ec2-be4f-7d08bdd3d162",
-    "7948e779-25ea-49f1-90ab-10ec424da6c9"
+    "bc83b72d-e874-4ec2-be4f-7d08bdd3d162"
   ]
 }
