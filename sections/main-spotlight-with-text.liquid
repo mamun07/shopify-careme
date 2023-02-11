@@ -5,7 +5,7 @@
         <div class="spotlight_main">
           <div class="entry_thumb">
             {% if block.settings.image %}
-              {{ block.settings.image | image_url: width: 500, height: 600, crop: 'center' }}
+              {{ block.settings.image | image_url: width: 500, height: 600, crop: 'center' | image_tag }}
             {% else %}
               {{ 'image' | placeholder_svg_tag }}
             {% endif %}
