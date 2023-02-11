@@ -432,5 +432,5 @@ ul.list-menu.list-menu--inline.text-left li a {
   color: #222;
 }
 .template-index .header__icon .icon {
-  fill: #222;
+  fill: #222 !important;
 }
