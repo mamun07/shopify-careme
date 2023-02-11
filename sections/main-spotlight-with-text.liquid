@@ -1,5 +1,7 @@
-<div class="container">
-  <div class="row">ok</div>
+<div class="spotlight_with_text_bg">
+  <div class="container">
+    <div class="row">ok</div>
+  </div>
 </div>
 
 {% schema %}
@@ -9,13 +11,68 @@
     {
       "type": "header",
       "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "spotlight_bg",
+      "label": "Background",
+      "default": "#2d2d2d"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": -100,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "paddign",
+      "min": 15,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding",
+      "default": 50
     }
   ],
   "blocks": [
     {
       "type": "image",
       "name": "image",
-      "settings": []
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title Text"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Description Text"
+        },
+        {
+          "type": "text",
+          "id": "button",
+          "label": "Button",
+          "default": "Button"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Link"
+        }
+      ]
     }
   ],
   "presets": [
