@@ -9,7 +9,7 @@
             {% else %}
               {{ 'image' | placeholder_svg_tag }}
             {% endif %}
-            <button>{{ block.settings.button }}</button>
+            <a>{{ block.settings.button }}</a>
           </div>
           <h2>{{ block.settings.title }}</h2>
           <h2>{{ block.settings.description }}</h2>
@@ -20,8 +20,17 @@
 </div>
 
 <style>
+  .spotlight_with_text_bg .row {
+    display: flex;
+  }
   .spotlight_with_text_bg .row .col-3 {
-    width: calc(100% / 3);
+    width: 33.33%;
+  }
+  .spotlight_main .entry_thumb {
+    position: relative;
+  }
+  .spotlight_main .entry_thumb a {
+    position: absulate;
   }
 </style>
 
