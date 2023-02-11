@@ -277,9 +277,15 @@
                       --button-background-style: {% if block.settings.btn_bg_color_gradient != blank %}{{ block.settings.btn_bg_color_gradient }}{% else %}{{ block.settings.btn_bg_color }}{% endif %}
                     "
                   >
-                    <div>Social</div>
+                    <div class="social_info">
+                      <ul>
+                        <li>{% render 'icon-facebook' %}</li>
+                      </ul>
+                    </div>
                     {{ block.settings.text }}
-                    <div>Contact</div>
+                    <div class="contact_info">
+                      <p>09678-008899</p>
+                    </div>
                   </div>
                 {%- endif -%}
               {%- when 'countdown' -%}
