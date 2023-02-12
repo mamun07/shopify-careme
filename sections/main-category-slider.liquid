@@ -1,7 +1,7 @@
 <div class="category_bg">
   <div class="container">
     <div class="row">
-      <div class="grid">
+      <div class="grid is-scroll">
         {% for block in section.blocks %}
           {% if block.settings.image %}
             <div class="item">
@@ -32,8 +32,6 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
     gap: 10px;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
   }
   .category_bg{
     background:{{ section.settings.bg }};
@@ -42,7 +40,6 @@
   }
   .category_bg .item{
       text-align: center;
-      scroll-snap-align: start;
   }
   .svg_image {
     display: block;
