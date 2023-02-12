@@ -26,6 +26,10 @@
     max-width: 100%;
     height: auto;
   }
+  svg{
+    width: unset !important;
+    height: unset !important;
+  }
   .category_bg .grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
@@ -36,10 +40,6 @@
   }
   .category_bg .item a{
     display: block;
-  }
-  .category_bg .item a svg{
-    width: {{section.settings.svg_size}}px !important;
-    height: unset !important;
   }
   .category_bg{
     background:{{ section.settings.bg }};
