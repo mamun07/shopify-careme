@@ -1,4 +1,7 @@
-<div class="add_banner_bg">
+<div
+  class="add_banner_bg"
+  style="background:{{ section.settings.bg }};padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0"
+>
   <div class="container">
     <div class="row">
       <div class="grid-container">
@@ -54,36 +57,6 @@
       "unit": "px",
       "label": "Padding Top",
       "default": 50
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 15,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Padding Bottom",
-      "default": 50
-    },
-    {
-      "type": "range",
-      "id": "margin_top",
-      "min": 15,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Margin Top",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "margin_bottom",
-      "min": 15,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Margin Bottom ",
-      "default": 0
     }
   ],
   "blocks": [
