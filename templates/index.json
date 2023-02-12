@@ -403,13 +403,15 @@
         "882708ec-9a24-4c73-aab3-3f180b3db52a": {
           "type": "banner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg"
+            "image": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg",
+            "image_link": ""
           }
         },
         "1fe0654c-b9f0-419d-a5f8-7494bd19a615": {
           "type": "banner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg"
+            "image": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg",
+            "image_link": ""
           }
         }
       },
@@ -418,9 +420,8 @@
         "1fe0654c-b9f0-419d-a5f8-7494bd19a615"
       ],
       "settings": {
-        "spotlight_bg": "#2d2d2d",
-        "margin_top": 50,
-        "paddign": 50
+        "bg": "#FFFFFF",
+        "padding": 50
       }
     }
   },
