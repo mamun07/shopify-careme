@@ -2,12 +2,13 @@
   <div class="container">
     <div class="row">
       <ul class="banners">
-        <li class="left_banner">
-          {{ section.settings.image1 | image_url: width: 1000 | image_tag }}
-        </li>
-        <li class="right_banner">
-          {{ section.settings.image2 | image_url: width: 1000 | image_tag }}
-        </li>
+        {% for block in section.blocks %}
+          {% if block.settings.image %}
+            <li class="left_banner">
+              {{ block.settings.image | image_url: width: 1000 | image_tag }}
+            </li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </div>
   </div>
