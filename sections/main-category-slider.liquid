@@ -8,7 +8,7 @@
               <a href="{{block.settings.image_link}}">
                 {{ block.settings.image | image_url: width: 1000 | image_tag }}
               </a>
-              <p>Football</p>
+              <p>{{ block.settings.title }}</p>
             </div>
           {% endif %}
         {% endfor %}
