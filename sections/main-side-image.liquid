@@ -1,0 +1,113 @@
+{% if section.settings.image %}
+  <div class="side_image_bg">
+    <div class="container">
+      <div class="row">
+        <div class="entry_banner">
+          <div class="content">
+            <h5>lorem12</h5>
+            <h2>Title Area</h2>
+            <p>Des lorem12</p>
+            <a>Button</a>
+          </div>
+          <div class="entry_banner">
+            <a href="{{section.settings.image_link}}">
+              {{ section.settings.image | image_url: width: 1000 | image_tag }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .side_image_bg{
+    background:{{ section.settings.bg }};
+    padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;
+    margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0
+  }
+  .entry_banner{}
+  @media (max-width: 767px) {
+    .side_image_bg{
+      padding:30px 0 30px 0;
+      margin: 0px 0 0px 0
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Side Image",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Background",
+      "default": "#2d2d2d"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom",
+      "default": 50
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "image_link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Side Image"
+    }
+  ]
+}
+{% endschema %}
