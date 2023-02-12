@@ -1,7 +1,7 @@
 <div class="category_bg">
   <div class="container">
     <div class="row">
-      <div class="grid-container">
+      <div class="grid">
         {% for block in section.blocks %}
           {% if block.settings.image %}
             <div class="item">
@@ -21,12 +21,12 @@
     max-width: 100%;
     height: auto;
   }
-  .grid-container {
+  .category_bg .grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
     gap: 15px;
   }
-  .item {
+  .category_bg .item {
     text-align: center;
   }
   .category_bg{
@@ -35,7 +35,7 @@
     margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0
   }
   @media (max-width: 767px) {
-    .grid-container {
+    .category_bg .grid {
       gap: 3px;
     }
     .category_bg{
