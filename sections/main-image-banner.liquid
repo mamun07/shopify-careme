@@ -20,9 +20,9 @@
     height: auto;
   }
   .banners {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  }
+  .banners li {
+    float: left;
   }
 </style>
 
@@ -59,24 +59,16 @@
       "unit": "px",
       "label": "Padding",
       "default": 50
-    }
-  ],
-  "blocks": [
+    },
     {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Banner link"
-        }
-      ]
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image One"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image Two"
     }
   ],
   "presets": [
