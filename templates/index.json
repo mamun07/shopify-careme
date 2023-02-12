@@ -402,7 +402,9 @@
       "settings": {
         "spotlight_bg": "#2d2d2d",
         "margin_top": 50,
-        "paddign": 50
+        "paddign": 50,
+        "image1": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg",
+        "image2": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg"
       }
     }
   },
