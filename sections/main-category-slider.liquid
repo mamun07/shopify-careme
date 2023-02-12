@@ -32,6 +32,8 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
     gap: 10px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
   }
   .category_bg{
     background:{{ section.settings.bg }};
@@ -40,6 +42,7 @@
   }
   .category_bg .item{
       text-align: center;
+      scroll-snap-align: start;
   }
   .svg_image {
     display: block;
