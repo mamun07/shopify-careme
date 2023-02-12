@@ -1,8 +1,8 @@
 <div class="category_bg">
   <div class="container">
     <div class="row">
-      <div class="grid">
-        <product-scroller>
+      <product-scroller>
+        <div class="grid">
           {% for block in section.blocks %}
             {% if block.settings.image %}
               <div class="item">
@@ -19,8 +19,8 @@
               </div>
             {% endif %}
           {% endfor %}
-        </product-scroller>
-      </div>
+        </div>
+      </product-scroller>
     </div>
   </div>
 </div>
