@@ -1,13 +1,13 @@
-{% if section.settings.image %}
+{% if section.settings.btn_link %}
   <div class="side_image_bg">
     <div class="container">
       <div class="row">
         <div class="entry_banner">
           <div class="content">
-            <h5>lorem12</h5>
-            <h2>Title Area</h2>
-            <p>Des lorem12</p>
-            <a>Button</a>
+            <h5>{{ section.settings.subtitle }}</h5>
+            <h2>{{ section.settings.title }}</h2>
+            <p>{{ section.settings.description }}</p>
+            <a href="{{section.settings.btn_link}}">{{ section.settings.btn }}</a>
           </div>
           <div class="entry_image">
             <a href="{{section.settings.image_link}}">
@@ -52,8 +52,37 @@
   "name": "Side Image",
   "settings": [
     {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Title",
+      "default": "Sub Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "description"
+    },
+    {
+      "type": "text",
+      "id": "btn",
+      "label": "Button",
+      "default": "Button"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Link"
+    },
+    {
       "type": "header",
-      "content": "Style"
+      "content": "Settings"
     },
     {
       "type": "color",
