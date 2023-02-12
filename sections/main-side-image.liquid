@@ -2,21 +2,19 @@
   <div class="container">
     <div class="row">
       {% for block in section.settings.blocks %}
-        {% if block.settings.btn_link %}
-          <div class="entry_banner">
-            <div class="content">
-              <h5>{{ block.settings.subtitle }}</h5>
-              <h2>{{ block.settings.title }}</h2>
-              <p>{{ block.settings.description }}</p>
-              <a href="{{block.settings.btn_link}}">{{ block.settings.btn }}</a>
-            </div>
-            <div class="entry_image">
-              <a href="{{block.settings.image_link}}">
-                {{ block.settings.image | image_url: width: 1000 | image_tag }}
-              </a>
-            </div>
+        <div class="entry_banner">
+          <div class="content">
+            <h5>{{ block.settings.subtitle }}</h5>
+            <h2>{{ block.settings.title }}</h2>
+            <p>{{ block.settings.description }}</p>
+            <a href="{{block.settings.btn_link}}">{{ block.settings.btn }}</a>
           </div>
-        {% endif %}
+          <div class="entry_image">
+            <a href="{{block.settings.image_link}}">
+              {{ block.settings.image | image_url: width: 1000 | image_tag }}
+            </a>
+          </div>
+        </div>
       {% endfor %}
     </div>
   </div>
