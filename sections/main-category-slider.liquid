@@ -1,0 +1,132 @@
+<div class="category_bg">
+  <div class="container">
+    <div class="row">
+      <div class="grid-container">
+        {% for block in section.blocks %}
+          {% if block.settings.image %}
+            <div class="item">
+              <a href="{{block.settings.image_link}}">
+                {{ block.settings.image | image_url: width: 1000 | image_tag }}
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+  }
+  .item {
+    text-align: center;
+  }
+  .category_bg{
+    background:{{ section.settings.bg }};
+    padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;
+    margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0
+  }
+  @media (max-width: 767px) {
+    .grid-container {
+      gap: 3px;
+    }
+    .category_bg{
+      padding:30px 0 30px 0;
+      margin: 0px 0 0px 0
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Add Category",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Background",
+      "default": "#2d2d2d"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 15,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 15,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 15,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 15,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Add Category",
+      "blocks": [
+        {
+          "type": "banner"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
