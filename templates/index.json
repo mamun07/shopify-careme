@@ -558,8 +558,8 @@
         "bg": "#ffffff",
         "padding_top": 50,
         "padding_bottom": 50,
-        "margin_top": 50,
-        "margin_bottom": 50,
+        "margin_top": 0,
+        "margin_bottom": 0,
         "image": "shopify:\/\/shop_images\/2_f81f37c4-6d1d-4882-b703-df327dd1fd2d.jpg",
         "image_link": ""
       }
