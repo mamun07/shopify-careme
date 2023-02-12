@@ -1,26 +1,24 @@
 <div class="category_bg">
   <div class="container">
     <div class="row">
-      <product-scroller>
-        <div class="grid">
-          {% for block in section.blocks %}
-            {% if block.settings.image %}
-              <div class="item ">
-                {% if block.settings.image_type == 'image' %}
-                  <a href="{{block.settings.image_link}}">
-                    {{ block.settings.image | image_url: width: 1000 | image_tag }}
-                  </a>
-                {% else %}
-                  <a class="svg_image" href="{{block.settings.image_link}}">
-                    {{ block.settings.svg_text }}
-                  </a>
-                {% endif %}
-                <p>{{ block.settings.title }}</p>
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </product-scroller>
+      <div class="grid">
+        {% for block in section.blocks %}
+          {% if block.settings.image %}
+            <div class="item ">
+              {% if block.settings.image_type == 'image' %}
+                <a href="{{block.settings.image_link}}">
+                  {{ block.settings.image | image_url: width: 1000 | image_tag }}
+                </a>
+              {% else %}
+                <a class="svg_image" href="{{block.settings.image_link}}">
+                  {{ block.settings.svg_text }}
+                </a>
+              {% endif %}
+              <p>{{ block.settings.title }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
