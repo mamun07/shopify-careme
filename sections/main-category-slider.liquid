@@ -46,7 +46,8 @@
     margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0
   }
   .category_bg .item{
-      text-align: center;
+    flex-basis: calc(100% / calc(var(--count) + 0.5));
+    width: calc(100% / calc(var(--count) + 0.5));
   }
   .svg_image {
     display: block;
