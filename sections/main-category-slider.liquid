@@ -5,7 +5,7 @@
         <div class="grid">
           {% for block in section.blocks %}
             {% if block.settings.image %}
-              <div class="item products-load is-scroll products-flex disable-srollbar-mb column-5 show-half">
+              <div class="item ">
                 {% if block.settings.image_type == 'image' %}
                   <a href="{{block.settings.image_link}}">
                     {{ block.settings.image | image_url: width: 1000 | image_tag }}
@@ -31,9 +31,14 @@
     height: auto;
   }
   .category_bg .grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    user-select: none;
+    padding-bottom: 45px;
+    overflow: auto;
+    gap: 30px;
+    padding-right: 60px;
   }
   .category_bg{
     background:{{ section.settings.bg }};
