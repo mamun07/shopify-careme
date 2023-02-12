@@ -6,9 +6,11 @@
           {% if block.settings.image %}
             <div class="item">
               <a href="{{block.settings.image_link}}">
-                {% unless block.settings.image_type == 'text' %}
+                {% if block.settings.image_type !== 'text' %}
                   {{ block.settings.image | image_url: width: 1000 | image_tag }}
-                {% endunless %}
+                {% else %}
+                  {{ block.settings.svg }}
+                {% endif %}
               </a>
               <p>{{ block.settings.title }}</p>
             </div>
@@ -129,7 +131,12 @@
             }
           ],
           "default": "text"
-        },
+        },,
+        {
+          "type": "textarea",
+          "id": "svg",
+          "label": "Text/SVG"
+        }
         {
           "type": "image_picker",
           "id": "image",
