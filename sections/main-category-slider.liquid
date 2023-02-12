@@ -26,6 +26,9 @@
     max-width: 100%;
     height: auto;
   }
+  .category_bg .item a svg{
+    width: {{section.settings.svg_size}}px;
+  }
   .category_bg .grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
@@ -138,6 +141,16 @@
           "label": "Text/SVG",
           "default": "Text/SVG"
         },
+        {
+          "type": "range",
+          "id": "svg_size",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Size",
+          "default": 100
+        }
         {
           "type": "image_picker",
           "id": "image",
