@@ -1,4 +1,4 @@
-<div class="add_banner_bg" style="background:#fff;padding:80px 0">
+<div class="add_banner_bg" style="background:{{ section.settings.bg }};padding:{{section.settings.padding}}px 0">
   <div class="container">
     <div class="row">
       <div class="grid-container">
@@ -41,23 +41,13 @@
     },
     {
       "type": "color",
-      "id": "spotlight_bg",
+      "id": "bg",
       "label": "Background",
       "default": "#2d2d2d"
     },
     {
       "type": "range",
-      "id": "margin_top",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "label": "Margin Top",
-      "default": 50
-    },
-    {
-      "type": "range",
-      "id": "paddign",
+      "id": "padding",
       "min": 15,
       "max": 100,
       "step": 1,
