@@ -6,7 +6,9 @@
           {% if block.settings.image %}
             <div class="item">
               <a href="{{block.settings.image_link}}">
-                {{ block.settings.image | image_url: width: 1000 | image_tag }}
+                {% unless block.settings.image_type == 'text' %}
+                  {{ block.settings.image | image_url: width: 1000 | image_tag }}
+                {% endunless %}
               </a>
               <p>{{ block.settings.title }}</p>
             </div>
@@ -111,6 +113,22 @@
           "id": "title",
           "label": "Title",
           "default": "Title"
+        },
+        {
+          "type": "select",
+          "id": "image_type",
+          "label": "Image Type",
+          "options": [
+            {
+              "value": "image",
+              "label": "Image"
+            },
+            {
+              "value": "text",
+              "label": "Text"
+            }
+          ],
+          "default": "text"
         },
         {
           "type": "image_picker",
