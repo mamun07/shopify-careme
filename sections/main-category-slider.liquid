@@ -6,7 +6,7 @@
           {% if block.settings.image %}
             <div class="item">
               <a href="{{block.settings.image_link}}">
-                {% if block.settings.image_type != 'text' %}
+                {% if block.settings.image_type == 'image' %}
                   {{ block.settings.image | image_url: width: 1000 | image_tag }}
                 {% else %}
                   {{ block.settings.svg_text }}
