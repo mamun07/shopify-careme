@@ -5,13 +5,15 @@
         {% for block in section.blocks %}
           {% if block.settings.image %}
             <div class="item">
-              <a href="{{block.settings.image_link}}">
-                {% if block.settings.image_type == 'image' %}
+              {% if block.settings.image_type == 'image' %}
+                <a href="{{block.settings.image_link}}">
                   {{ block.settings.image | image_url: width: 1000 | image_tag }}
-                {% else %}
+                </a>
+              {% else %}
+                <a class="svg_image" href="{{block.settings.image_link}}">
                   {{ block.settings.svg_text }}
-                {% endif %}
-              </a>
+                </a>
+              {% endif %}
               <p>{{ block.settings.title }}</p>
             </div>
           {% endif %}
@@ -31,13 +33,17 @@
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
     gap: 10px;
   }
-  .category_bg .item svg{
-    width: 200px !important;
-  }
   .category_bg{
     background:{{ section.settings.bg }};
     padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;
     margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0
+  }
+  .svg_image {
+    display: block;
+    }
+  .svg_image {
+    width: 200px;
+    height: unset;
   }
   @media (max-width: 767px) {
     .category_bg .grid {
