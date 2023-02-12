@@ -396,23 +396,12 @@
         "bg_color_tab_active": "#f8f8f8",
         "bg_color_gradient_tab_active": ""
       }
-    },
-    "226f68c4-5e08-4033-b124-f8593c3eb0ca": {
-      "type": "main-image-banner",
-      "settings": {
-        "spotlight_bg": "#2d2d2d",
-        "margin_top": 50,
-        "paddign": 50,
-        "image1": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg",
-        "image2": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg"
-      }
     }
   },
   "order": [
     "16321237356a896dad",
     "12195d59-7eb8-4c7b-862d-02a270b7c3cf",
     "163247026462da6862",
-    "bc83b72d-e874-4ec2-be4f-7d08bdd3d162",
-    "226f68c4-5e08-4033-b124-f8593c3eb0ca"
+    "bc83b72d-e874-4ec2-be4f-7d08bdd3d162"
   ]
 }
