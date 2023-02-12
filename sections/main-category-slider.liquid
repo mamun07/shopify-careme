@@ -5,7 +5,7 @@
         <div class="grid">
           {% for block in section.blocks %}
             {% if block.settings.image %}
-              <div class="item">
+              <div class="item products-load is-scroll products-flex disable-srollbar-mb column-5 show-half">
                 {% if block.settings.image_type == 'image' %}
                   <a href="{{block.settings.image_link}}">
                     {{ block.settings.image | image_url: width: 1000 | image_tag }}
