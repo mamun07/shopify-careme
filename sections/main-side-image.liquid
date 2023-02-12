@@ -1,24 +1,26 @@
-{% if section.settings.btn_link %}
-  <div class="side_image_bg">
-    <div class="container">
-      <div class="row">
-        <div class="entry_banner">
-          <div class="content">
-            <h5>{{ section.settings.subtitle }}</h5>
-            <h2>{{ section.settings.title }}</h2>
-            <p>{{ section.settings.description }}</p>
-            <a href="{{section.settings.btn_link}}">{{ section.settings.btn }}</a>
+<div class="side_image_bg">
+  <div class="container">
+    <div class="row">
+      {% for block in section.settings.blocks %}
+        {% if block.settings.btn_link %}
+          <div class="entry_banner">
+            <div class="content">
+              <h5>{{ block.settings.subtitle }}</h5>
+              <h2>{{ block.settings.title }}</h2>
+              <p>{{ block.settings.description }}</p>
+              <a href="{{block.settings.btn_link}}">{{ block.settings.btn }}</a>
+            </div>
+            <div class="entry_image">
+              <a href="{{block.settings.image_link}}">
+                {{ block.settings.image | image_url: width: 1000 | image_tag }}
+              </a>
+            </div>
           </div>
-          <div class="entry_image">
-            <a href="{{section.settings.image_link}}">
-              {{ section.settings.image | image_url: width: 1000 | image_tag }}
-            </a>
-          </div>
-        </div>
-      </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
-{% endif %}
+</div>
 
 <style>
   img {
@@ -51,35 +53,6 @@
 {
   "name": "Side Image",
   "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "Title"
-    },
-    {
-      "type": "text",
-      "id": "subtitle",
-      "label": "Sub Title",
-      "default": "Sub Title"
-    },
-    {
-      "type": "textarea",
-      "id": "description",
-      "label": "Description",
-      "default": "description"
-    },
-    {
-      "type": "text",
-      "id": "btn",
-      "label": "Button",
-      "default": "Button"
-    },
-    {
-      "type": "url",
-      "id": "btn_link",
-      "label": "Link"
-    },
     {
       "type": "header",
       "content": "Settings"
@@ -141,9 +114,51 @@
       "label": "Link"
     }
   ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Sub Title",
+          "default": "Sub Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "description"
+        },
+        {
+          "type": "text",
+          "id": "btn",
+          "label": "Button",
+          "default": "Button"
+        },
+        {
+          "type": "url",
+          "id": "btn_link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Side Image"
+      "name": "Side Image",
+      "blocks": [
+        {
+          "type": "image"
+        }
+      ]
     }
   ]
 }
