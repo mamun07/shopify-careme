@@ -22,7 +22,6 @@
         {% else %}
           <div class="banner_overlay {% if block.settings.image_aligment == 'center' %}center{% endif %}">
             <div class="content">
-              <h5>{{ block.settings.subtitle }}</h5>
               <h1>{{ block.settings.title }}</h1>
               <p>{{ block.settings.description }}</p>
               <a class="btn_hover" href="{{ block.settings.btn_link }}">
@@ -48,6 +47,17 @@
   }
   .banner_overlay .content{
     width: 50%;
+  }
+  .banner_overlay .content h1{
+    position: relative;
+  }
+  .banner_overlay .content h1::before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 1px;
+    background: red;
   }
   .banner_overlay .bg_image{
     width: 50%;
