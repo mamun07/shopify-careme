@@ -40,35 +40,6 @@
 </div>
 
 <style>
-  .banner_overlay{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .banner_overlay .content{
-    width: 40%;
-    text-align: right;
-    padding-right: 50px;
-  }
-  .banner_overlay .content h1{
-    position: relative;
-    margin-left: 150px;
-  }
-  .banner_overlay .content h1::before{
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    width: 130px;
-    height: 2px;
-    background: black;
-    transform: translate(150px, 40px);
-  }
-  .banner_overlay .bg_image{
-    width: 60%;
-  }
-
-
   img {
     max-width: 100%;
     height: auto;
@@ -101,7 +72,7 @@
   }
   .btn_hover{
     height: 50px;
-    min-width: 150px;
+    min-width: 170px;
     display: inline-flex;
     border: 1px solid #da5894;
     align-items: center;
@@ -157,6 +128,34 @@
   .btn_hover{
     margin-top: 50px;
   }
+  .banner_overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner_overlay .content{
+    width: 40%;
+    text-align: right;
+    padding-right: 50px;
+  }
+  .banner_overlay .content h1{
+    position: relative;
+    margin-left: 150px;
+  }
+  .banner_overlay .content h1::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 130px;
+    height: 2px;
+    background: black;
+    transform: translate(150px, 40px);
+  }
+  .banner_overlay .bg_image{
+    width: 60%;
+  }
+
   @media (max-width: 1440px) {
     .entry_banner .content {
       width: 40%;
