@@ -7,7 +7,7 @@
             <h5>{{ block.settings.subtitle }}</h5>
             <h2>{{ block.settings.title }}</h2>
             <p>{{ block.settings.description }}</p>
-            <a class="hover_x" href="">
+            <a class="btn_hover" href="{{ block.settings.btn_link }}">
               <span>{{ block.settings.btn }}</span>
               {% render 'icon-arrow-right-2' %}
             </a>
@@ -46,7 +46,7 @@
 
 
 
-  .section-video .cap_link a {
+  .content a.btn_hover {
     font-size: 1.2rem;
     color: #3b3b3b;
     font-weight: 400;
@@ -62,24 +62,24 @@
     margin-top: 25px;
     z-index: 9;
   }
-  .hover_x span {
+  .btn_hover span {
     padding-top: 2px;
     transform: translate(11px);
     transition: all .35s ease;
     display: inline-block;
   }
-  .hover_x svg {
+  .btn_hover svg {
     margin-left: 12px;
     z-index: 9;
     visibility: hidden;
     opacity: 0;
     transition: all .35s ease;
   }
-  .hover_x:hover span {
+  .btn_hover:hover span {
     transform: translate(0);
     transition: all .35s ease;
   }
-  .hover_x:hover svg {
+  .btn_hover:hover svg {
     color: #fff;
     visibility: initial;
     opacity: 1;
