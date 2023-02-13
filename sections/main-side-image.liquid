@@ -3,7 +3,7 @@
     <div class="row">
       {% for block in section.blocks %}
         {% if block.settings.image_aligment != 'center' %}
-          <div class="entry_banner {% if block.settings.image_aligment == 'left' %}left {% endif %}">
+          <div class="entry_banner {% if block.settings.image_aligment == 'left' %}left{% endif %}">
             <div class="content">
               <h5>{{ block.settings.subtitle }}</h5>
               <h1>{{ block.settings.title }}</h1>
@@ -20,7 +20,7 @@
             </div>
           </div>
         {% else %}
-          <div class="entry_banner {% if block.settings.image_aligment == 'center' %}center {% endif %}">
+          <div class="entry_banner {% if block.settings.image_aligment == 'center' %}center{% endif %}">
             <div class="content">
               <h5>{{ block.settings.subtitle }}</h5>
               <h1>{{ block.settings.title }}</h1>
