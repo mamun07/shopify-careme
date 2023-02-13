@@ -436,6 +436,36 @@
         "border_color_card": "#f0f1f4"
       }
     },
+    "226f68c4-5e08-4033-b124-f8593c3eb0ca": {
+      "type": "main-image-banner",
+      "blocks": {
+        "882708ec-9a24-4c73-aab3-3f180b3db52a": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg",
+            "image_link": "shopify:\/\/collections"
+          }
+        },
+        "1fe0654c-b9f0-419d-a5f8-7494bd19a615": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg",
+            "image_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "882708ec-9a24-4c73-aab3-3f180b3db52a",
+        "1fe0654c-b9f0-419d-a5f8-7494bd19a615"
+      ],
+      "settings": {
+        "bg": "#ffffff",
+        "padding_top": 15,
+        "padding_bottom": 50,
+        "margin_top": 15,
+        "margin_bottom": 15
+      }
+    },
     "bc83b72d-e874-4ec2-be4f-7d08bdd3d162": {
       "type": "product-tab-block",
       "blocks": {
@@ -522,36 +552,6 @@
         "bg_color_gradient_tab_active": ""
       }
     },
-    "226f68c4-5e08-4033-b124-f8593c3eb0ca": {
-      "type": "main-image-banner",
-      "blocks": {
-        "882708ec-9a24-4c73-aab3-3f180b3db52a": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg",
-            "image_link": "shopify:\/\/collections"
-          }
-        },
-        "1fe0654c-b9f0-419d-a5f8-7494bd19a615": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Global_Smart_Watch_Banner_21736485-f94e-46dc-9701-b297aa72ffc9.jpg",
-            "image_link": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "882708ec-9a24-4c73-aab3-3f180b3db52a",
-        "1fe0654c-b9f0-419d-a5f8-7494bd19a615"
-      ],
-      "settings": {
-        "bg": "#ffffff",
-        "padding_top": 15,
-        "padding_bottom": 50,
-        "margin_top": 15,
-        "margin_bottom": 15
-      }
-    },
     "165e6044-7002-459f-9a9f-1f35c92078c0": {
       "type": "main-side-image",
       "blocks": {
@@ -567,24 +567,10 @@
             "image": "shopify:\/\/shop_images\/2_f81f37c4-6d1d-4882-b703-df327dd1fd2d.jpg",
             "image_link": "shopify:\/\/collections"
           }
-        },
-        "159b13a4-c434-44f6-b0a1-1227e5c71674": {
-          "type": "image",
-          "settings": {
-            "image_aligment": "left",
-            "title": "Being perfectly well-dressed gives",
-            "subtitle": "LOREM IPSUM DOLOR",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan",
-            "btn": "Check More",
-            "btn_link": "shopify:\/\/collections",
-            "image": "shopify:\/\/shop_images\/2_f81f37c4-6d1d-4882-b703-df327dd1fd2d.jpg",
-            "image_link": "shopify:\/\/collections"
-          }
         }
       },
       "block_order": [
-        "9ecdd96f-4c78-447c-aaca-bac75e701478",
-        "159b13a4-c434-44f6-b0a1-1227e5c71674"
+        "9ecdd96f-4c78-447c-aaca-bac75e701478"
       ],
       "settings": {
         "bg": "#ffffff",
@@ -700,6 +686,34 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
+    },
+    "1ee3e074-3615-4086-a3fa-52d9e3e9f84d": {
+      "type": "main-side-image",
+      "blocks": {
+        "template--16642341961955__1ee3e074-3615-4086-a3fa-52d9e3e9f84d-1676283986d67d2b7b-0": {
+          "type": "image",
+          "settings": {
+            "image_aligment": "left",
+            "title": "Being perfectly well-dressed gives",
+            "subtitle": "LOREM IPSUM DOLOR",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan",
+            "btn": "Check More",
+            "btn_link": "",
+            "image": "shopify:\/\/shop_images\/2_f81f37c4-6d1d-4882-b703-df327dd1fd2d.jpg",
+            "image_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--16642341961955__1ee3e074-3615-4086-a3fa-52d9e3e9f84d-1676283986d67d2b7b-0"
+      ],
+      "settings": {
+        "bg": "#ffffff",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "margin_top": 50,
+        "margin_bottom": 50
+      }
     }
   },
   "order": [
@@ -707,9 +721,10 @@
     "12195d59-7eb8-4c7b-862d-02a270b7c3cf",
     "b59a0645-a35a-4c5e-8041-b9050b424d20",
     "163247026462da6862",
-    "bc83b72d-e874-4ec2-be4f-7d08bdd3d162",
     "226f68c4-5e08-4033-b124-f8593c3eb0ca",
+    "bc83b72d-e874-4ec2-be4f-7d08bdd3d162",
     "165e6044-7002-459f-9a9f-1f35c92078c0",
-    "1df88671-74ce-4c21-bcb1-716da99507cd"
+    "1df88671-74ce-4c21-bcb1-716da99507cd",
+    "1ee3e074-3615-4086-a3fa-52d9e3e9f84d"
   ]
 }
