@@ -53,16 +53,27 @@
     align-items: center;
     justify-content: center;
   }
-  .arrow_btn_effect svg{
+  .arrow_btn_effect span{
     padding-top: 2px;
     transform: translate(11px);
     transition: all .35s ease;
     display: inline-block;
   }
-  .arrow_btn_effect:hover svg{
+  .arrow_btn_effect svg{
     margin-left: 12px;
     z-index: 9;
     visibility: hidden;
+    opacity: 0;
+    transition: all .35s ease;
+  }
+  .arrow_btn_effect:hover svg{
+    transform: translate(0);
+    transition: all .35s ease;
+  }
+  .arrow_btn_effect:hover svg{
+    visibility: initial;
+    opacity: 1;
+    transition: all .35s ease;
   }
 
   @media (max-width: 767px) {
