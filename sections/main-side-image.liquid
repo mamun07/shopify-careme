@@ -30,7 +30,7 @@
                 {% render 'icon-arrow-right-2' %}
               </a>
             </div>
-            <div class="entry_image">
+            <div class="bg_image">
               <a href="{{block.settings.image_link}}">
                 {{ block.settings.image | image_url: width: 1000 | image_tag }} 
               </a>
@@ -43,6 +43,11 @@
 </div>
 
 <style>
+  .banner_overlay{}
+  .banner_overlay .content{}
+  .banner_overlay .bg_image{}
+
+
   img {
     max-width: 100%;
     height: auto;
