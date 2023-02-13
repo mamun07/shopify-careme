@@ -64,10 +64,12 @@
     line-height: 14px;
   }
   .btn_hover svg {
-    margin-left: 12px;
+    width: 14px;
+    height: unset;
     z-index: 9;
-    visibility: hidden;
     opacity: 0;
+    margin-left: 12px;
+    visibility: hidden;
     transition: all .35s ease;
   }
   .btn_hover:hover span {
@@ -75,9 +77,9 @@
     transition: all .35s ease;
   }
   .btn_hover:hover svg {
-    color: #fff;
-    visibility: initial;
+    fill: #fff;
     opacity: 1;
+    visibility: initial;
     transition: all .35s ease;
   }
 
