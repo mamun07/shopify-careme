@@ -7,8 +7,8 @@
             <h5>{{ block.settings.subtitle }}</h5>
             <h2>{{ block.settings.title }}</h2>
             <p>{{ block.settings.description }}</p>
-            <a href="{{block.settings.btn_link}}">
-              {{ block.settings.btn }} {% render 'icon-arrow-right' %}
+            <a class="arrow_btn_effect" href="{{block.settings.btn_link}}">
+              {{ block.settings.btn }} {% render 'icon-arrow-right-2' %}
             </a>
           </div>
           <div class="entry_image">
@@ -39,6 +39,28 @@
   }
   .entry_banner > div{
     width: 50%;
+  }
+  .arrow_btn_effect{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+    height: 52px;
+    line-height: 52px;
+    background: white;
+    transition: all .35s ease;
+    display: inline-flex;
+    text-transform: uppercase;
+    min-width: 155px;
+    margin-top: 25px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9;
+  }
+  .arrow_btn_effect:hover{
+    text-decoration: none;
   }
   @media (max-width: 767px) {
     .side_image_bg{
