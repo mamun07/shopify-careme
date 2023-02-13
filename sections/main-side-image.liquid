@@ -195,15 +195,19 @@
     .entry_banner.left {
       flex-direction: column-reverse;
     }
-    .entry_banner.left .content {
-      text-align: center;
-    }
     .banner_overlay {
       flex-direction: column;
     }
     .banner_overlay .bg_image,
     .banner_overlay .content {
       width: 100%;
+    }
+    .banner_overlay .content,
+    .entry_banner.left .content {
+      text-align: center;
+    }
+    .banner_overlay .bg_image {
+        margin-top: 25px;
     }
   }
 </style>
