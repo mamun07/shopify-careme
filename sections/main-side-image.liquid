@@ -7,9 +7,9 @@
             <h5>{{ block.settings.subtitle }}</h5>
             <h2>{{ block.settings.title }}</h2>
             <p>{{ block.settings.description }}</p>
-            <a class="arrow_btn_effect" href="{{block.settings.btn_link}}">
-              <span>{{ block.settings.btn }}</span> 
-              {% render 'icon-arrow-right-2' %} <i class="fa fa-long-arrow-right"></i>
+            <a class="hover_x" href="">
+              <span>{{ block.settings.btn }}</span>
+              {% render 'icon-arrow-right-2' %}
             </a>
           </div>
           <div class="entry_image">
@@ -41,44 +41,75 @@
   .entry_banner > div{
     width: 50%;
   }
-  .arrow_btn_effect{
+
+
+
+
+
+  .section-video .cap_link a {
     font-size: 1.2rem;
+    color: #3b3b3b;
     font-weight: 400;
     text-align: center;
     padding: 0 20px;
     height: 52px;
     line-height: 52px;
-    background: rgb(216, 88, 120);
+    background: white;
     transition: all .35s ease;
     display: inline-flex;
     text-transform: uppercase;
-    min-width: 200px;
+    min-width: 155px;
     margin-top: 25px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
     z-index: 9;
-}
   }
-  .arrow_btn_effect span{
+  .hover_x span {
     padding-top: 2px;
     transform: translate(11px);
     transition: all .35s ease;
     display: inline-block;
   }
-  .arrow_btn_effect svg{
+  .hover_x svg {
+    color: #000;
+    font-weight: 400;
+    font-size: 17px;
     margin-left: 12px;
     z-index: 9;
     visibility: hidden;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
     opacity: 0;
     transition: all .35s ease;
   }
-  .arrow_btn_effect:hover svg{
+  .hover_x:hover span {
     transform: translate(0);
     transition: all .35s ease;
   }
-  .arrow_btn_effect:hover svg{
+  .hover_x:hover svg {
+    color: #fff;
     visibility: initial;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
     opacity: 1;
     transition: all .35s ease;
   }
+
+
+
+
+
+
 
   @media (max-width: 767px) {
     .side_image_bg{
