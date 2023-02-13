@@ -599,7 +599,7 @@
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50,
         "product_block_layout": "grid",
-        "product_bg": "#fff",
+        "product_bg": "#ffffff",
         "product_bg_gradient": "",
         "style_block_header": "style1",
         "pd_top_title": 30,
@@ -633,7 +633,7 @@
         "button_icon": "",
         "mg_bottom_button": 55,
         "enable_button_shadow": false,
-        "color_button": "#fff",
+        "color_button": "#ffffff",
         "border_color_button": "#232323",
         "bg_color_button": "#232323",
         "bg_color_gradient_button": "",
@@ -666,20 +666,20 @@
         "show_half": true,
         "scroll_height": 4,
         "scroll_track_bg": "#f1f1f1",
-        "scroll_thumb_color": "#000",
-        "scroll_thumb_hover_color": "#444",
+        "scroll_thumb_color": "#000000",
+        "scroll_thumb_hover_color": "#444444",
         "enable_hover_drag_icon": true,
         "position": "left",
         "width_banner": 40,
         "display_list_collection": false,
         "collection_color": "#202020",
         "collection_color_hover": "#3e8cc4",
-        "collection_bg_color": "#fff",
+        "collection_bg_color": "#ffffff",
         "collection_bg_color_gradient": "",
         "text_list": "View all categories",
         "url_list": "",
         "enable_layout_special": false,
-        "bg_card": "#fff",
+        "bg_card": "#ffffff",
         "padding_card": 15,
         "border_radius_card": 5,
         "border_layout_card": "full",
@@ -714,6 +714,33 @@
         "margin_top": 50,
         "margin_bottom": 50
       }
+    },
+    "d4064cd7-3971-4ee0-8de0-b3daec60ce8e": {
+      "type": "main-side-image",
+      "blocks": {
+        "template--16642341961955__d4064cd7-3971-4ee0-8de0-b3daec60ce8e-1676284623c712b645-0": {
+          "type": "image",
+          "settings": {
+            "image_aligment": "center",
+            "title": "Title",
+            "subtitle": "Sub Title",
+            "description": "description",
+            "btn": "Button",
+            "btn_link": "",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16642341961955__d4064cd7-3971-4ee0-8de0-b3daec60ce8e-1676284623c712b645-0"
+      ],
+      "settings": {
+        "bg": "#ffffff",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "margin_top": 50,
+        "margin_bottom": 50
+      }
     }
   },
   "order": [
@@ -725,6 +752,7 @@
     "bc83b72d-e874-4ec2-be4f-7d08bdd3d162",
     "165e6044-7002-459f-9a9f-1f35c92078c0",
     "1df88671-74ce-4c21-bcb1-716da99507cd",
-    "1ee3e074-3615-4086-a3fa-52d9e3e9f84d"
+    "1ee3e074-3615-4086-a3fa-52d9e3e9f84d",
+    "d4064cd7-3971-4ee0-8de0-b3daec60ce8e"
   ]
 }
