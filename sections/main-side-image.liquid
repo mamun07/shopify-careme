@@ -2,22 +2,26 @@
   <div class="container">
     <div class="row">
       {% for block in section.blocks %}
-      <div class="entry_banner {% if block.settings.image_aligment == 'left' %}left {% endif %}">
-          <div class="content">
-            <h5>{{ block.settings.subtitle }}</h5>
-            <h1>{{ block.settings.title }}</h1>
-            <p>{{ block.settings.description }}</p>
-            <a class="btn_hover" href="{{ block.settings.btn_link }}">
-              <span>{{ block.settings.btn }}</span>
-              {% render 'icon-arrow-right-2' %}
-            </a>
+        {% if block.settings.image_aligment != 'center' %}
+          <div class="entry_banner {% if block.settings.image_aligment == 'left' %}left {% endif %}">
+            <div class="content">
+              <h5>{{ block.settings.subtitle }}</h5>
+              <h1>{{ block.settings.title }}</h1>
+              <p>{{ block.settings.description }}</p>
+              <a class="btn_hover" href="{{ block.settings.btn_link }}">
+                <span>{{ block.settings.btn }}</span>
+                {% render 'icon-arrow-right-2' %}
+              </a>
+            </div>
+            <div class="entry_image">
+              <a href="{{block.settings.image_link}}">
+                {{ block.settings.image | image_url: width: 1000 | image_tag }} 
+              </a>
+            </div>
           </div>
-          <div class="entry_image">
-            <a href="{{block.settings.image_link}}">
-              {{ block.settings.image | image_url: width: 1000 | image_tag }} 
-            </a>
-          </div>
-        </div>
+        {% else %}
+          Center
+        {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -223,6 +227,10 @@
             {
               "value": "right",
               "label": "Right"
+            },
+            {
+              "value": "center",
+              "label": "Center"
             }
           ],
           "default": "right"
