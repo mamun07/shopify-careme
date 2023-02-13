@@ -8,12 +8,12 @@
             <h2>{{ block.settings.title }}</h2>
             <p>{{ block.settings.description }}</p>
             <a href="{{block.settings.btn_link}}">
-              {{ block.settings.btn }}
+              {{ block.settings.btn }} {% render 'icon-arrow-right-2' %}
             </a>
           </div>
           <div class="entry_image">
             <a href="{{block.settings.image_link}}">
-              {{ block.settings.image | image_url: width: 1000 | image_tag }}
+              {{ block.settings.image | image_url: width: 1000 | image_tag }} 
             </a>
           </div>
         </div>
@@ -37,14 +37,13 @@
     justify-content: space-between;
     align-items: center;
   }
-
   .entry_banner > div{
     width: 50%;
   }
   @media (max-width: 767px) {
     .side_image_bg{
       padding:30px 0 30px 0;
-      margin: 0px 0 0px 0
+      margin: 0px 0 0px 0;
     }
   }
 </style>
