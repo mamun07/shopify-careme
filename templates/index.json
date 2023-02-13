@@ -722,12 +722,13 @@
           "type": "image",
           "settings": {
             "image_aligment": "center",
-            "title": "Title",
+            "title": "Being perfectly well-dressed gives",
             "subtitle": "Sub Title",
-            "description": "description",
-            "btn": "Button",
-            "btn_link": "",
-            "image_link": ""
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan",
+            "btn": "Check More",
+            "btn_link": "shopify:\/\/collections",
+            "image": "shopify:\/\/shop_images\/img-12-3_1920x1920_a9851419-1bfd-4df0-9aef-1741dbc9906e.jpg",
+            "image_link": "shopify:\/\/collections\/all"
           }
         }
       },
