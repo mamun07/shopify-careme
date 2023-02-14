@@ -19,12 +19,12 @@
                     <div class="single_bottom">
                       <h2>{{- product.title | link_to: product.url -}}</h2>
                       <h3>{{- product.price | money_with_currency -}}</h3>
-                      <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
-                        <div class="button_area">
-                          <input type="hidden" name="id" value="{{ product.variants.id }}" />
+                      <div class="button_area">
+                        <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
+                          <input type="hidden" name="id" value="{{ product.variants.id }}"/>
                           <button class="button" type="submit" name="add" id="AddToCart"> Add To Cart </button>
-                        </div>
-                      </form>
+                        </form>
+                      </div>
                     </div>
                 </div>
               {% endfor %}
