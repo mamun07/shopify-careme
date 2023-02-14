@@ -1,4 +1,4 @@
-<div class="spotlight_with_text_bg">
+<div class="{{section.id}}_spotlight_with_text_bg">
   <div class="container">
     <div class="row">
       {% for block in section.blocks %}
@@ -24,7 +24,7 @@
     max-width: 100%;
     height: auto;
   }
-  .spotlight_with_text_bg {
+  .{{section.id}}_spotlight_with_text_bg {
     padding: 50px 200px !important;
     background: #000;
   }
