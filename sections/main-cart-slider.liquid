@@ -12,14 +12,6 @@
 
             {% paginate collections[collectionName].products by 1 -%}
               {% for part in paginate.parts -%}
-
-                {% if part.is_link -%}
-                  {{ part.title | link_to: part.url}}
-                {%- else -%}
-                  <span>{{ part.title }}</span>
-                {% endif %}
-
-
                 {% for product in collections[collectionName].products %}
                   {{ product.featured_image | image_url: width: 300 | image_tag }}
                   {{- product.title | link_to: product.url }}<br/>
@@ -29,6 +21,14 @@
                       Add To Cart 
                     </button>
                   </form>
+                  
+
+                {% if part.is_link -%}
+                  {{ part.title | link_to: part.url}}
+                {%- else -%}
+                  <span>{{ part.title }}</span>
+                {% endif %}
+
                 {% endfor %}
               {% endfor %}
             {%- endpaginate %}
