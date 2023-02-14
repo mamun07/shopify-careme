@@ -9,7 +9,7 @@
           Image
         </div>
         <div class="left_thumb">
-          
+
             <div class="slider_cart_product">
               {% for product in collections[collectionName].products %}
                 <div class="single_product">
@@ -51,7 +51,7 @@
     gap: 15px;
   }
   .slider_cart_product button.slick-arrow {
-      display: none;
+      display: none !important;
   }
   @media (max-width: 767px) {
     .{{section.id}}_cart_slider_bg{
