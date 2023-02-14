@@ -9,7 +9,7 @@
           {% form 'product' %}
             {% for product in collections[section.settings.slider_cart_collection].products %}
               {{- product.title | link_to: product.url }}<br/>
-            {% endfor %
+            {% endfor %}
 
             <input type="submit" value="Add to cart">
           {% endform %}}
