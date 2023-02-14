@@ -13,13 +13,19 @@
             <div class="slider_cart_product">
               {% for product in collections[collectionName].products %}
                 <div class="single_product">
-                  {{ product.featured_image | image_url: width: 600 | image_tag }}
-                  {{- product.title | link_to: product.url -}}<br/>
-                  <h3>{{- product.price | money_with_currency -}}</h3>
-                  <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
-                    <input type="hidden" name="id" value="{{ product.variants.id }}" />
-                    <button class="shop" type="submit" name="add" id="AddToCart"> Add To Cart </button>
-                  </form>
+                    <div class="single_top">
+                      {{ product.featured_image | image_url: width: 600 | image_tag }}
+                    </div>
+                    <div class="single_bottom">
+                      <h2>{{- product.title | link_to: product.url -}}</h2>
+                      <h3>{{- product.price | money_with_currency -}}</h3>
+                      <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
+                        <div class="button">
+                          <input type="hidden" name="id" value="{{ product.variants.id }}" />
+                          <button class="shop" type="submit" name="add" id="AddToCart"> Add To Cart </button>
+                        </div>
+                      </form>
+                    </div>
                 </div>
               {% endfor %}
             </div>
