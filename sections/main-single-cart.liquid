@@ -1,0 +1,91 @@
+<div class="{{section.id}}_single_cart_bg">
+  <div class="container">
+    <div class="row">
+      <div class="single_cart">
+        <div>Left</div>
+        <div>Right</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .{{section.id}}_single_cart_bg{
+    background:{{ section.settings.bg }};
+    padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;
+    margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0
+  }
+  @media (max-width: 767px) {
+    .{{section.id}}_single_cart_bg{
+      padding:30px 0 30px 0;
+      margin: 0px 0 0px 0
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Single Cart",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Background",
+      "default": "#2d2d2d"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Single Cart"
+    }
+  ]
+}
+{% endschema %}
