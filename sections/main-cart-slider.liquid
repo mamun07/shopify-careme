@@ -11,14 +11,13 @@
           {% endfor %}
         </div>
         <div class="left_thumb">
-            <section class="regular slider">
+            <div class="slider_cart_product">
               <p>ok</p>
               <p>ok</p>
               <p>ok</p>
               <p>ok</p>
-            </section>
-
-as
+            </div>
+            
           {% for product in collections[collectionName].products %}
             {{ product.featured_image | image_url: width: 300 | image_tag }}
             {{- product.title | link_to: product.url }}<br/>
