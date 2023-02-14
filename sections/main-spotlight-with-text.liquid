@@ -31,7 +31,7 @@
   .{{section.id}}_spotlight_with_text_bg .row {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 30px;
+    gap: 15px;
     margin-top: -200px;
   }
   .spotlight_main .entry_thumb {
@@ -52,6 +52,12 @@
     margin-left: -100px;
     transition: 0.3s;
     border: 1px solid #fff;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .spotlight_main .entry_thumb:hover a {
+    visibility: visible;
+    opacity: 1;
   }
   .spotlight_main .entry_thumb a:hover {
     background: #da5894;
