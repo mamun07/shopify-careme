@@ -711,8 +711,8 @@
         "bg": "#ffffff",
         "padding_top": 50,
         "padding_bottom": 50,
-        "margin_top": 50,
-        "margin_bottom": 50
+        "margin_top": 0,
+        "margin_bottom": 0
       }
     },
     "d4064cd7-3971-4ee0-8de0-b3daec60ce8e": {
