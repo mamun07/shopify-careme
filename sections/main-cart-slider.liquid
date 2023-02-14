@@ -11,17 +11,15 @@
               {{- product.title | link_to: product.url }}<br/>
 
 
-              {% if product.available == true %}
-                <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
-                  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                  <button class="shop" type="submit" name="add" id="AddToCart">
-                    Add To Cart 
-                  </button>
-                </form>
-              {% endif %}
+              <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                <button class="shop" type="submit" name="add" id="AddToCart">
+                  Add To Cart 
+                </button>
+              </form>
 
 
-              
+
           {% endfor %}
         </div>
       </div>
