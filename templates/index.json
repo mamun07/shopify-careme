@@ -1002,6 +1002,17 @@
     },
     "281df1e3-9002-4beb-a33c-3d1d10c219d5": {
       "type": "main-cart-slider",
+      "blocks": {
+        "e6559374-9eec-44c8-975b-99c0949e7bf8": {
+          "type": "product",
+          "settings": {
+            "slider_cart_collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "e6559374-9eec-44c8-975b-99c0949e7bf8"
+      ],
       "settings": {
         "bg": "#ffffff",
         "padding_top": 50,
