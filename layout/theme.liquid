@@ -19,11 +19,13 @@
         <script type="text/javascript">
             $(document).on('ready', function () {
                 $(".slider_cart_product").slick({
-                    dots: false,
+                    dots: true,
                     infinite: true,
-                    navigator: true,
+                    navigator: false,
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
                 });
             });
         </script>
