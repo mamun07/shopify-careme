@@ -12,6 +12,15 @@
         </div>
         <div class="left_thumb">
 
+        <div class="silgle_cart_slider">
+          <div>your content</div>
+          <div>your content</div>
+          <div>your content</div>
+        </div>
+
+
+
+
           {% for product in collections[collectionName].products %}
             {{ product.featured_image | image_url: width: 300 | image_tag }}
             {{- product.title | link_to: product.url }}<br/>
@@ -28,6 +37,14 @@
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('.silgle_cart_slider').slick({
+      setting-name: setting-value
+    });
+  });
+</script>
 
 <style>
   img {
