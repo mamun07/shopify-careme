@@ -18,7 +18,7 @@
               <p>ok</p>
             </section>
 
-
+as
           {% for product in collections[collectionName].products %}
             {{ product.featured_image | image_url: width: 300 | image_tag }}
             {{- product.title | link_to: product.url }}<br/>
@@ -35,19 +35,6 @@
     </div>
   </div>
 </div>
-
-
-    
-<script type="text/javascript">
-  $(document).on('ready', function () {
-      $(".regular").slick({
-          dots: true,
-          infinite: true,
-          slidesToShow: 1,
-          slidesToScroll: 1
-      });
-  });
-</script>
 
 
 <style>
