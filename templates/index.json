@@ -852,6 +852,35 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "e53a01f6-6075-4cf7-977f-211e9f02283b": {
+      "type": "main-side-image",
+      "blocks": {
+        "template--16642341961955__e53a01f6-6075-4cf7-977f-211e9f02283b-1676355395cf0feca6-0": {
+          "type": "image",
+          "settings": {
+            "image_aligment": "right",
+            "title": "Being perfectly well-dressed gives",
+            "subtitle": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan",
+            "btn": "Check More",
+            "btn_link": "shopify:\/\/collections",
+            "image": "shopify:\/\/shop_images\/1_e5afc9fe-5cf6-43a2-a0ec-437fa50a7609.jpg",
+            "image_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--16642341961955__e53a01f6-6075-4cf7-977f-211e9f02283b-1676355395cf0feca6-0"
+      ],
+      "settings": {
+        "layout_style": "overlay",
+        "bg": "#ffffff",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "margin_top": 50,
+        "margin_bottom": 50
+      }
     }
   },
   "order": [
@@ -865,6 +894,7 @@
     "1df88671-74ce-4c21-bcb1-716da99507cd",
     "1ee3e074-3615-4086-a3fa-52d9e3e9f84d",
     "ffb30ebc-9d0d-42d8-9891-4debbcfd3029",
-    "d4064cd7-3971-4ee0-8de0-b3daec60ce8e"
+    "d4064cd7-3971-4ee0-8de0-b3daec60ce8e",
+    "e53a01f6-6075-4cf7-977f-211e9f02283b"
   ]
 }
