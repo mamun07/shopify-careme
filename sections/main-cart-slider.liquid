@@ -11,15 +11,17 @@
         <div class="left_thumb">
 
             {% paginate collections[collectionName].products by 1 -%}
-              {% for product in collections[collectionName].products %}
-                {{ product.featured_image | image_url: width: 300 | image_tag }}
-                {{- product.title | link_to: product.url }}<br/>
-                <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
-                  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                  <button class="shop" type="submit" name="add" id="AddToCart">
-                    Add To Cart 
-                  </button>
-                </form>
+              {% for part in paginate.parts -%}
+                {% for product in collections[collectionName].products %}
+                  {{ product.featured_image | image_url: width: 300 | image_tag }}
+                  {{- product.title | link_to: product.url }}<br/>
+                  <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
+                    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                    <button class="shop" type="submit" name="add" id="AddToCart">
+                      Add To Cart 
+                    </button>
+                  </form>
+                {% endfor %}
               {% endfor %}
             {%- endpaginate %}
 
