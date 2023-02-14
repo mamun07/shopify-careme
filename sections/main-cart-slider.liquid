@@ -1,7 +1,7 @@
-<div class="{{section.id}}_single_cart_bg">
+<div class="{{section.id}}_cart_slider_bg">
   <div class="container">
     <div class="row">
-      <div class="single_cart">
+      <div class="slider_cart">
         <div>Left</div>
         <div>Right</div>
       </div>
@@ -14,13 +14,13 @@
     max-width: 100%;
     height: auto;
   }
-  .{{section.id}}_single_cart_bg{
+  .{{section.id}}_cart_slider_bg{
     background:{{ section.settings.bg }};
     padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;
     margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0
   }
   @media (max-width: 767px) {
-    .{{section.id}}_single_cart_bg{
+    .{{section.id}}_cart_slider_bg{
       padding:30px 0 30px 0;
       margin: 0px 0 0px 0
     }
@@ -29,7 +29,7 @@
 
 {% schema %}
 {
-  "name": "Single Cart",
+  "name": "Slider Cart",
   "settings": [
     {
       "type": "header",
@@ -84,7 +84,7 @@
   ],
   "presets": [
     {
-      "name": "Single Cart"
+      "name": "Slider Cart"
     }
   ]
 }
