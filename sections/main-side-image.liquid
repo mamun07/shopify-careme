@@ -26,7 +26,7 @@
     {% for block in section.blocks %}
       <div class="banner_overlay {% if block.settings.image_aligment == 'left' %}left{% endif %}">
         <div class="content">
-          {% if block.settings.image_aligment == 'left' %}
+          {% if section.settings.layout_style == 'side' %}
             <h5>{{ block.settings.subtitle }}</h5>
           {% endif %}
           <h1>{{ block.settings.title }}</h1>
