@@ -13,7 +13,7 @@
             <div class="slider_cart_product">
               {% for product in collections[collectionName].products %}
                 <div class="single_product">
-                    <div class="single_top">
+                    <div class="images">
                       {{ product.featured_image | image_url: width: 600 | image_tag }}
                     </div>
                     <div class="single_bottom">
