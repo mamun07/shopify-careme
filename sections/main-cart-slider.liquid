@@ -9,6 +9,7 @@
           {% endfor %}
         </div>
         <div class="left_thumb">
+          {% paginate collection.products by 1 -%}
           {% for product in collections[collectionName].products %}
               {{- product.title | link_to: product.url }}<br/>
 
@@ -23,6 +24,7 @@
 
 
           {% endfor %}
+        {%- endpaginate %}
         </div>
       </div>
     </div>
