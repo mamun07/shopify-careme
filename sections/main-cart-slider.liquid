@@ -6,7 +6,8 @@
           Previews
         </div>
         <div class="left_thumb">
-          {% for product in collections[section.settings.slider_cart_collection].products %}
+          {%  assign collectionName = section.settings.slider_cart_collection %}
+          {% for product in collections[collectionName].products %}
               {{- product.title | link_to: product.url }}<br/>
 
               <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
@@ -15,7 +16,7 @@
                    Add To Cart 
                 </button>
               </form>
-              
+
           {% endfor %}
         </div>
       </div>
