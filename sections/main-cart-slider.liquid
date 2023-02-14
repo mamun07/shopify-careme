@@ -7,10 +7,22 @@
         </div>
         <div class="left_thumb">
           {% for product in collections[section.settings.slider_cart_collection].products %}
-            {% form 'product' %}
+            
               {{- product.title | link_to: product.url }}<br/>
-              <input type="submit" value="Add to cart">
-            {% endform %}
+
+
+
+              <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                <button class="shop" type="submit" name="add" id="AddToCart">
+                   Add To Cart 
+                </button>
+              </form>
+
+
+
+
+
           {% endfor %}
         </div>
       </div>
