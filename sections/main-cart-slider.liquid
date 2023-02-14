@@ -3,7 +3,12 @@
     <div class="row">
       <div class="slider_cart">
         <div>Left</div>
-        <div>Right</div>
+        <div>
+          {% form 'product' %}
+          
+            <input type="submit" value="Add to cart">
+          {% endform %}
+        </div>
       </div>
     </div>
   </div>
