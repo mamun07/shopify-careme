@@ -13,7 +13,7 @@
         <div class="left_thumb">
 
           {% for product in collections[collectionName].products %}
-            {{ product.variants.featured_image | image_url: width: 300 | image_tag }}
+            {{ product.featured_image | image_url: width: 300 | image_tag }}
             {{- product.title | link_to: product.url }}<br/>
             <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
               <input type="hidden" name="id" value="{{ product.variants.id }}" />
