@@ -6,9 +6,7 @@
           <div class="slider_cart_product">
             {% for product in collections[collectionName].products %}
               <div class="preview_image">
-                {% for media in product.media %}
-                  {{ media | image_url: width: 600 | image_tag }}
-                {% endfor %}
+                {{ product.featured_image | image_url: width: 600 | image_tag }}
               </div>
               <div class="single_product">
                   <div class="images">
