@@ -1,8 +1,4 @@
-<div 
-  style="background:{{ section.settings.bg }};
-  padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;
-  margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0"
->
+<div class="{{section.id}}_side_image_bg">
   <div class="container">
     <div class="row">
       {% for block in section.blocks %}
@@ -47,6 +43,11 @@
   img {
     max-width: 100%;
     height: auto;
+  }
+  .{{section.id}}_side_image_bg{
+    background:{{ section.settings.bg }};
+    padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;
+    margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0
   }
   .entry_banner{
     display: flex;
