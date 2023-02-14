@@ -9,9 +9,9 @@
           {% endfor %}
         </div>
         <div class="left_thumb">
-          
+
+          {% paginate collections[collectionName].products by 1 -%}
           {% for product in collections[collectionName].products %}
-            {% paginate collection.product by 1 -%}
               {{- product.title | link_to: product.url }}<br/>
               <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
                 <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
@@ -19,8 +19,8 @@
                   Add To Cart 
                 </button>
               </form>
-            {%- endpaginate %}
-          {% endfor %}
+            {% endfor %}
+          {%- endpaginate %}
 
         </div>
       </div>
