@@ -999,16 +999,6 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
-    },
-    "0ca1d08c-88cd-4757-9c2d-7090520a69e2": {
-      "type": "main-single-cart",
-      "settings": {
-        "bg": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "margin_top": 50,
-        "margin_bottom": 50
-      }
     }
   },
   "order": [
@@ -1024,7 +1014,6 @@
     "ffb30ebc-9d0d-42d8-9891-4debbcfd3029",
     "d4064cd7-3971-4ee0-8de0-b3daec60ce8e",
     "f027dbab-4cc0-4f7a-8c55-1aba2259612a",
-    "e53a01f6-6075-4cf7-977f-211e9f02283b",
-    "0ca1d08c-88cd-4757-9c2d-7090520a69e2"
+    "e53a01f6-6075-4cf7-977f-211e9f02283b"
   ]
 }
