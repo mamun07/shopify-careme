@@ -7,7 +7,7 @@
       <div class="slider_cart">
         <div class="product_previews">
           {% for product in collections[collectionName].products %}
-            {{ product.featured_image | image_url: width: 300 | image_tag }}
+            {{ product.featured_image | image_url: width: 600 | image_tag }}
           {% endfor %}
         </div>
         <div class="left_thumb">
@@ -47,7 +47,7 @@
     justify-content: baseline;
   }
   .slider_cart .left_thumb{
-    width: 300px;
+    width: 600px;
   }
   .slider_cart_product button.slick-arrow {
       display: none;
