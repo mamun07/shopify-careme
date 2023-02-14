@@ -12,9 +12,15 @@
 
               <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
                 <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                <button class="shop" type="submit" name="add" id="AddToCart">
-                   Add To Cart 
-                </button>
+                {% if product.variants.first.quantity >= 1 %}
+                  <button class="shop" type="submit" name="add" id="AddToCart">
+                    Add To Cart 
+                  </button>
+                {% else %}
+                  <button class="shop" type="button">
+                    Stock Out 
+                  </button>
+                {%endif%}
               </form>
 
           {% endfor %}
