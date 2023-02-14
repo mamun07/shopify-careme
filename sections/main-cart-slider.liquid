@@ -11,7 +11,22 @@
           {% endfor %}
         </div>
         <div class="left_thumb">
-          
+            <section class="regular slider">
+              <div>
+                  <img src="http://placehold.it/350x300?text=1">
+              </div>
+              <div>
+                  <img src="http://placehold.it/350x300?text=1">
+              </div>
+              <div>
+                  <img src="http://placehold.it/350x300?text=1">
+              </div>
+              <div>
+                  <img src="http://placehold.it/350x300?text=1">
+              </div>
+            </section>
+
+
           {% for product in collections[collectionName].products %}
             {{ product.featured_image | image_url: width: 300 | image_tag }}
             {{- product.title | link_to: product.url }}<br/>
