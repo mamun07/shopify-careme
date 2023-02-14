@@ -5,7 +5,7 @@
       <div class="slider_cart">
         <div class="product_previews">
           {% for product in collections[collectionName].products %}
-            {{ images['potions-header.png'] | image_url: width: 300 | image_tag }}
+            {{ product.featured_image | image_url: width: 300 | image_tag }}
           {% endfor %}
         </div>
         <div class="left_thumb">
