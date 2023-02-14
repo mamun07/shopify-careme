@@ -6,9 +6,14 @@
           Previews
         </div>
         <div class="left_thumb">
-          {% for product in collections[section.settings.slider_cart_collection].products %}
-            {{- product.title | link_to: product.url }}<br/>
-          {% endfor %}
+          {% form 'product' %}
+            {% for product in collections[section.settings.slider_cart_collection].products %}
+              {{- product.title | link_to: product.url }}<br/>
+            {% endfor %
+            
+            <input type="submit" value="Add to cart">
+            {{ form | payment_button }}
+          {% endform %}}
         </div>
       </div>
     </div>
