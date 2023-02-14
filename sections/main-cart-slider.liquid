@@ -32,19 +32,6 @@
   "name": "Slider Cart",
   "settings": [
     {
-      "type": "header",
-      "content": "Sellect Product"
-    },
-    {
-      "type": "collection",
-      "id": "slider_cart_collection",
-      "label": "Collection"
-    },
-    {
-      "type": "header",
-      "content": "Settings"
-    },
-    {
       "type": "color",
       "id": "bg",
       "label": "Background",
@@ -91,9 +78,33 @@
       "default": 50
     }
   ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "slider_cart_collection",
+          "label": "Collection"
+        }        
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Slider Cart"
+      "name": "Slider Cart",
+      "blocks": [
+        {
+          "name": "Product"
+        },
+        {
+          "name": "Product"
+        },
+        {
+          "name": "Product"
+        }
+      ]
     }
   ]
 }
