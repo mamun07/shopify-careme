@@ -21,6 +21,7 @@
                       Add To Cart 
                     </button>
                   </form>
+                {% endfor %}
                   
 
                 {% if part.is_link -%}
@@ -28,8 +29,6 @@
                 {%- else -%}
                   <span>{{ part.title }}</span>
                 {% endif %}
-
-                {% endfor %}
               {% endfor %}
             {%- endpaginate %}
 
