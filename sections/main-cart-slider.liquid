@@ -5,7 +5,7 @@
       <div class="slider_cart">
         <div class="product_previews">
           {% for media in product.media %}
-            {{ media | img_url: 'master' }}
+            {{ media | image_url: width: 600 | image_tag }}
           {% endfor %}
         </div>
         <div class="left_thumb">
