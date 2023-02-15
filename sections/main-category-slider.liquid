@@ -1,7 +1,7 @@
 <div class="category_bg">
   <div class="container">
     <div class="row">
-      <div class="grid" data-slick='{"slidesToShow": 10,slidesToScroll: 10,"dots": true,"infinite": true,}'>
+      <div class="grid" data-slick='{"slidesToShow": 10,"dots": true,"infinite": true}'>
         {% for block in section.blocks %}
           {% if block.settings.image %}
             <div class="item">
@@ -29,147 +29,147 @@
     height: auto;
   }
   .grid .slick-arrow {
-    display: none !important;
+      display: none !important;
   }
-  .category_bg {
-    background: {{ section.settings.bg }};
-    padding: {{ section.settings.padding_top}}px 0{{ section.settings.padding_bottom}}
-    px 0;
-    margin: {{ section.settings.margin_top}}
-    px 0{{ section.settings.margin_bottom}}
-    px 0
+  .category_bg{
+    background:{{ section.settings.bg }};
+    padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;
+    margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0
   }
-  .category_bg .item {
+  .category_bg .item{
     text-align: center;
   }
   .svg_image {
     display: block;
   }
-  .svg_image svg {
-    width: {{ section.settings.svg_size}}
-    px;
+  .svg_image svg{
+    width: {{section.settings.svg_size}}px;
     height: unset;
   }
-  @media(max-width: 767px) {
-    .category_bg {
-      padding: 30px 0;
-      margin: 0
+  @media (max-width: 767px) {
+    .category_bg{
+      padding:30px 0 30px 0;
+      margin: 0px 0 0px 0
     }
   }
 </style>
 
 {% schema %}
-  {
-    "name": "Add Category",
-    "settings": [
-      {
-        "type": "range",
-        "id": "svg_size",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "Text/SVG Size",
-        "default": 100
-      },
-      {
-        "type": "color",
-        "id": "bg",
-        "label": "Background",
-        "default": "#2d2d2d"
-      },
-      {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "Padding Top",
-        "default": 50
-      },
-      {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "Padding Bottom",
-        "default": 50
-      }, {
-        "type": "range",
-        "id": "margin_top",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "Margin Top",
-        "default": 50
-      }, {
-        "type": "range",
-        "id": "margin_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "Margin Bottom",
-        "default": 50
-      }
-    ],
-    "blocks": [
-      {
-        "type": "banner",
-        "name": "Category",
-        "settings": [
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Title",
-            "default": "Title"
-          },
-          {
-            "type": "select",
-            "id": "image_type",
-            "label": "Image Type",
-            "options": [
-              {
-                "value": "image",
-                "label": "Image"
-              }, {
-                "value": "text",
-                "label": "Text"
-              }
-            ],
-            "default": "text"
-          },
-          {
-            "type": "textarea",
-            "id": "svg_text",
-            "label": "Text/SVG",
-            "default": "Text/SVG"
-          },
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          }, {
-            "type": "url",
-            "id": "image_link",
-            "label": "Link"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Add Category",
-        "blocks": [
-          {
-            "type": "banner"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Add Category",
+  "settings": [
+    {
+      "type": "range",
+      "id": "svg_size",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Text/SVG Size",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Background",
+      "default": "#2d2d2d"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "select",
+          "id": "image_type",
+          "label": "Image Type",
+          "options": [
+            {
+              "value": "image",
+              "label": "Image"
+            },
+            {
+              "value": "text",
+              "label": "Text"
+            }
+          ],
+          "default": "text"
+        },
+        {
+          "type": "textarea",
+          "id": "svg_text",
+          "label": "Text/SVG",
+          "default": "Text/SVG"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Add Category",
+      "blocks": [
+        {
+          "type": "banner"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
