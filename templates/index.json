@@ -1017,8 +1017,8 @@
         "category_image": "shopify:\/\/shop_images\/img-12-3_1920x1920_a9851419-1bfd-4df0-9aef-1741dbc9906e.jpg",
         "slider_cart_collection": "100-cod-items",
         "bg": "#ffffff",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "margin_top": 0,
         "margin_bottom": 0
       }
