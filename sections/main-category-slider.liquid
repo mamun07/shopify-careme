@@ -1,10 +1,10 @@
 <div class="category_bg">
   <div class="container">
     <div class="row">
-      <div class="grid" data-slick='{"slidesToShow": 10, "slidesToScroll": 5,"dots": true}'>
+      <div class="category_grid" data-slick='{"slidesToShow": 10, "slidesToScroll": 5,"dots": true}'>
         {% for block in section.blocks %}
           {% if block.settings.image %}
-            <div class="item">
+            <div class="category_item">
               {% if block.settings.image_type == 'image' %}
                 <a href="{{block.settings.image_link}}">
                   {{ block.settings.image | image_url: width: 1000 | image_tag }}
@@ -28,7 +28,7 @@
     max-width: 100%;
     height: auto;
   }
-  .grid .slick-arrow {
+  .category_grid .slick-arrow {
       display: none !important;
   }
   .category_bg{
@@ -36,7 +36,7 @@
     padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;
     margin: {{section.settings.margin_top}}px 0 {{section.settings.margin_bottom}}px 0
   }
-  .category_bg .item{
+  .category_bg .category_item{
     text-align: center;
   }
   .svg_image {
