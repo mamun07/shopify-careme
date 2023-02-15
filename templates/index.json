@@ -1037,10 +1037,23 @@
             "date": "Wednesday, Jan 26, 2019",
             "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum..."
           }
+        },
+        "1a669f8e-5f4c-4913-9063-eb4b421423c6": {
+          "type": "review",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/img-12-3_1920x1920_a9851419-1bfd-4df0-9aef-1741dbc9906e.jpg",
+            "heading": "Awesome...",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "",
+            "date": "Wednesday, Jan 26, 2019",
+            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum..."
+          }
         }
       },
       "block_order": [
-        "87b5fd56-9163-4ec6-83fe-6f4af856cc87"
+        "87b5fd56-9163-4ec6-83fe-6f4af856cc87",
+        "1a669f8e-5f4c-4913-9063-eb4b421423c6"
       ],
       "settings": {
         "container": "container",
