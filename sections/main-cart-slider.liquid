@@ -15,7 +15,7 @@
                 <div class="single_bottom">
                   <a class="disk" href="{{- product.url -}}">{{- product.title | truncate: 50, '...' -}}</a>
                   <a class="mobl" href="{{- product.url -}}">{{- product.title | truncate: 25, '...' -}}</a>
-                  <h3>{{- product.compare_at_price_max | money_with_currency | remove: "BDT" -}} {{- product.price_max | money_with_currency | remove: "BDT" -}}</h3>
+                  <h3><span>{{- product.price_max | money_with_currency | remove: "BDT" -}}</span> {{- product.price_max | money_with_currency | remove: "BDT" -}}</h3>
                 </div>
                 <div class="button_area">
                   <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
@@ -69,6 +69,9 @@
     font-size: 18px;
     margin: 0;
     color: #ff6600;
+  }  
+  .single_bottom h3 span{
+    color: #777777;
   }
   .single_bottom {
     min-height: 125px;
