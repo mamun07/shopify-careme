@@ -1014,7 +1014,7 @@
     "281df1e3-9002-4beb-a33c-3d1d10c219d5": {
       "type": "main-cart-slider",
       "settings": {
-        "slider_cart_collection": "bag-wallet",
+        "slider_cart_collection": "100-cod-items",
         "bg": "#ffffff",
         "padding_top": 50,
         "padding_bottom": 50,
