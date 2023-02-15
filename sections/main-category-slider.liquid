@@ -28,6 +28,11 @@
     max-width: 100%;
     height: auto;
   }
+  .category_bg .grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    gap: 10px;
+  }
   .category_bg{
     background:{{ section.settings.bg }};
     padding:{{section.settings.padding_top}}px 0 {{section.settings.padding_bottom}}px 0;
@@ -44,6 +49,10 @@
     height: unset;
   }
   @media (max-width: 767px) {
+    .category_bg .grid {
+      gap: 10px;
+      grid-template-columns: auto auto auto auto;
+    }
     .category_bg{
       padding:30px 0 30px 0;
       margin: 0px 0 0px 0
