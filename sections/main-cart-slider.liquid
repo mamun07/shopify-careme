@@ -4,14 +4,14 @@
     <div class="row">
       <div class="slider_cart_product">
         {% for product in collections[collectionName].products %}
-          <div class="preview_image">
+          <div class="preview_images">
             {{ product.featured_image | image_url: width: 600 | image_tag }}
           </div>
-          <div class="single_product">
+          <div class="single_products">
               <div class="images">
                 {{ product.featured_image | image_url: width: 600 | image_tag }}
               </div>
-              <div class="single_bottom">
+              <div class="single_bottoms">
                 <h2>{{- product.title | link_to: product.url -}}</h2>
                 <h3>{{- product.price | money_with_currency -}}</h3>
                 <div class="button_area">
