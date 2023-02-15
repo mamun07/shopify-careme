@@ -30,7 +30,6 @@
                 $(".grid").slick({
                     dots: true,
                     infinite: true,
-                    navigation: false,
                     slidesToShow: 10,
                     slidesToScroll: 10,
                     responsive: [
@@ -38,8 +37,23 @@
                             breakpoint: 425,
                             settings: {
                                 slidesToShow: 4,
+                                slidesToScroll: 4,
                             }
-                        }
+                        },
+                        {
+                            breakpoint: 1440,
+                            settings: {
+                                slidesToShow: 10,
+                                slidesToScroll: 5,
+                            }
+                        },
+                        {
+                            breakpoint: 1920,
+                            settings: {
+                                slidesToShow: 10,
+                                slidesToScroll: 5,
+                            }
+                        },
                     ]
                 });
             });
