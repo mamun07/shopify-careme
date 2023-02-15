@@ -2,6 +2,9 @@
 <div class="{{section.id}}_cart_slider_bg">
   <div class="container">
     <div class="row">
+      <div class="images">
+        {{ section.settings.category_image | image_url: width: 600 | image_tag }}
+      </div>
       <div class="slider_cart_product">
         {% for product in collections[collectionName].products %}
           <div class="entry_single_product">
@@ -54,6 +57,11 @@
     {
       "type": "header",
       "content": "Sellect Product"
+    },
+    {
+      "type": "image_picker",
+      "id": "category_image",
+      "label": "Category Image"
     },
     {
       "type": "collection",
