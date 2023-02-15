@@ -14,7 +14,7 @@
                   {{ block.settings.svg_text }}
                 </a>
               {% endif %}
-              <p>{{ block.settings.title }}</p>
+              <p>{{ block.settings.title | truncate: 35 }}</p>
             </div>
           {% endif %}
         {% endfor %}
