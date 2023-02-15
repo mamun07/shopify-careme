@@ -72,6 +72,17 @@
   }  
   .single_bottom h3 span{
     color: #777777;
+    position: relative;
+  }
+  .single_bottom h3 span:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 2px;
+      background: #7a7a7a;
+      transform: translate(-50%);
   }
   .single_bottom {
     min-height: 125px;
