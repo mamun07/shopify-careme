@@ -13,7 +13,7 @@
               </div>
               <div class="single_bottom">
                 <h2>{{- product.title | link_to: product.url -}}</h2>
-                <h3>{{- product.price | money -}}</h3>
+                <h3>{{- product.price | money_without_trailing_zeros -}}</h3>
                 <div class="button_area">
                   <form method="post" action="/cart/add" enctype="multipart/form-data" id="AddToCartForm">
                     <input type="hidden" name="id" value="{{ product.variants.first.id }}"/>
