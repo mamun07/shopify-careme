@@ -1022,6 +1022,90 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "4138b69e-8282-4d29-a4fb-e70f7b80fb87": {
+      "type": "customer-review-block",
+      "blocks": {
+        "87b5fd56-9163-4ec6-83fe-6f4af856cc87": {
+          "type": "review",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/img-12-2_1920x1920_0365f60b-4d98-418a-9e6f-c2fdfbf4416d.jpg",
+            "heading": "Awesome...",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "",
+            "date": "Wednesday, Jan 26, 2019",
+            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum..."
+          }
+        },
+        "1a669f8e-5f4c-4913-9063-eb4b421423c6": {
+          "type": "review",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/img-12-3_1920x1920_a9851419-1bfd-4df0-9aef-1741dbc9906e.jpg",
+            "heading": "Awesome...",
+            "sub_heading": "",
+            "rating": "star5",
+            "name": "",
+            "date": "Wednesday, Jan 26, 2019",
+            "body": "Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum..."
+          }
+        }
+      },
+      "block_order": [
+        "87b5fd56-9163-4ec6-83fe-6f4af856cc87",
+        "1a669f8e-5f4c-4913-9063-eb4b421423c6"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "section_style": "style_1",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50,
+        "review_bg": "#fafafa",
+        "review_bg_gradient": "",
+        "review_title": "Top Reviews",
+        "color_title": "#232323",
+        "mg_bottom_title": 18,
+        "fontsize_title": 16,
+        "fontsize_title_mb": 16,
+        "review_des": "",
+        "color_des": "#3c3c3c",
+        "margin_bottom_des": 35,
+        "fontsize_des": 16,
+        "title_align": "center",
+        "block_layout_style": "layout1",
+        "review_rows": "1",
+        "show_arrow": true,
+        "avatar_margin_bottom": 10,
+        "color_heading": "#202020",
+        "fontsize_heading": 20,
+        "heading_margin_bottom": 14,
+        "heading_font_weight": "400",
+        "color_sub_heading": "#808080",
+        "fontsize_sub_heading": 13,
+        "sub_heading_margin_bottom": 20,
+        "color_name": "#202020",
+        "fontsize_name": 14,
+        "color_date": "#808080",
+        "fontsize_date": 13,
+        "color_body": "#202020",
+        "fontsize_body": 16,
+        "body_margin_bottom": 24,
+        "color_icon": "#fff",
+        "bg_color_icon": "#cbcbcb",
+        "star_margin_bottom": 0,
+        "show_avatar": true,
+        "start_position": "below_title",
+        "star_color": "",
+        "scroll_height": 4,
+        "scroll_track_bg": "#f1f1f1",
+        "scroll_thumb_color": "#000",
+        "scroll_thumb_hover_color": "#444"
+      }
     }
   },
   "order": [
@@ -1038,6 +1122,7 @@
     "d4064cd7-3971-4ee0-8de0-b3daec60ce8e",
     "f027dbab-4cc0-4f7a-8c55-1aba2259612a",
     "e53a01f6-6075-4cf7-977f-211e9f02283b",
-    "281df1e3-9002-4beb-a33c-3d1d10c219d5"
+    "281df1e3-9002-4beb-a33c-3d1d10c219d5",
+    "4138b69e-8282-4d29-a4fb-e70f7b80fb87"
   ]
 }
