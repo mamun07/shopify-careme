@@ -4,7 +4,7 @@
     <div class="row">
       <div class="slider_cart_product">
         {% for product in collections[collectionName].products %}
-          <div class="single_product">
+          <div class="entry_single_product">
               <div class="images">
                 {{ product.featured_image | image_url: width: 600 | image_tag }}
               </div>
@@ -44,7 +44,7 @@
     left: 0;
     bottom: 0;
   }
-  .single_product{
+  .entry_single_product{
     display: grid;
     grid-template-columns: auto auto;
     gap: 15px;
