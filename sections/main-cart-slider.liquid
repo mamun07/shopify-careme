@@ -3,9 +3,6 @@
   <div class="container">
     <div class="row">
       <div class="category_cart_slider">
-        <div class="images">
-          {{ section.settings.category_image | image_url: width: 600 | image_tag }}
-        </div>
         <div class="slider_cart_product">
           {% for product in collections[collectionName].products %}
             <div class="entry_single_product">
