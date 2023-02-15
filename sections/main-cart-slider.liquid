@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="category_cart_slider">
-        <div class="images">
+        <div class="category_images">
           {{ section.settings.category_image | image_url: width: 600 | image_tag }}
         </div>
         <div class="slider_cart_product">
@@ -43,6 +43,12 @@
   }
   .slider_cart_product button.slick-arrow {
       display: none !important;
+  }
+  .category_images{
+    width: 50%;
+  }
+  .slider_cart_product{
+    width: 50%;
   }
   @media (max-width: 767px) {
     .{{section.id}}_cart_slider_bg{
