@@ -12,7 +12,8 @@
             <a href="{{ block.settings.button_link }}">{{ block.settings.button }}</a>
           </div>
           <h2>{{ block.settings.title }}</h2>
-          <p>{{ block.settings.description }}</p>
+          <p class="des">{{ block.settings.description | truncate: 50, '...' }}</p>
+          <p class="md">{{ block.settings.description | truncate: 25, '...' }}</p>
         </div>
       {% endfor %}
     </div>
@@ -81,6 +82,9 @@
     font-size: 14px;
     line-height: 18px;
   }
+  .md{
+    display: none;
+  }
   @media (max-width: 1440px) {
     .{{section.id}}_spotlight_with_text_bg {
       padding: 50px 200px !important;
@@ -135,6 +139,12 @@
       height: 30px;
       margin-left: -45px;
       bottom: 10px;
+    }
+    .des{
+      display: none;
+    }
+    .md{
+      display: block;
     }
   }
 </style>
